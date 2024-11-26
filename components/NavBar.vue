@@ -23,6 +23,7 @@ function closeMenuAndDropdown() {
     <NuxtLink
       to="/"
       class="text-2xl font-bold text-gray-800 dark:text-white"
+      @click="closeMenuAndDropdown"
     >
       <img src="../assets/logo/Logo_capture_proche.png" alt="Logo" class="w-24 h-14 object-cover">
     </NuxtLink>
