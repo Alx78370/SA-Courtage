@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-4xl">
+    <h3 class="text-4xl pb-3">
       Discutons de votre projet ensemble
     </h3>
     <p>

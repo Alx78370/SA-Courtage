@@ -7,7 +7,7 @@ export default {
         'hero-pattern': 'url(\'/assets/images/fake.webp\')',
       },
       height: {
-        section: 'calc(100vh - 100px)',
+        section: 'calc(100vh - 88px)',
       },
     },
   },
