@@ -2,7 +2,14 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': 'url(\'/assets/images/fake.webp\')',
+      },
+      height: {
+        section: 'calc(100vh - 100px)',
+      },
+    },
   },
   plugins: [],
 }
