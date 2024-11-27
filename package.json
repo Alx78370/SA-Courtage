@@ -16,6 +16,7 @@
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@primevue/themes": "^4.2.3",
     "nuxt": "^3.14.1592",
+    "nuxt-calendly": "^0.1.21",
     "primevue": "^4.2.3",
     "vue": "latest",
     "vue-router": "latest"
