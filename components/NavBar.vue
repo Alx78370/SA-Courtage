@@ -22,7 +22,7 @@ function closeMenuAndDropdown() {
   <nav class="container mx-auto flex items-center justify-between p-4">
     <NuxtLink
       to="/"
-      class="text-2xl font-bold text-gray-800 dark:text-white"
+      class="text-2xl font-bold text-gray-800"
       @click="closeMenuAndDropdown"
     >
       <img src="../assets/logo/Logo_capture_proche.png" alt="Logo" class="w-24 h-14 object-cover">

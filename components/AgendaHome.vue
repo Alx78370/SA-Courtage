@@ -5,7 +5,7 @@ const options = {
 </script>
 
 <template>
-  <div class="shadow-2xl">
+  <div class="border-2 shadow-2xl">
     <div class="p-6">
       <h3 class="text-4xl pb-3">
         Discutons de votre projet ensemble

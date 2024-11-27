@@ -21,7 +21,7 @@
       <Icon name="lets-icons:e-mail" />
       s.a.courtage@gmail.com
     </div>
-    <div class="flex gap-5">
+    <div class="flex justify-center gap-5">
       <NuxtLink to="/contact" class="flex justify-center items-center bg-blue-400 p-3 rounded-2xl min-w-32">
         Contactez-moi
       </NuxtLink>
