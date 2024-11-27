@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@primevue/nuxt-module',
     '@nuxt/icon',
+    'nuxt-calendly',
   ],
   primevue: {
     /* Configuration */
