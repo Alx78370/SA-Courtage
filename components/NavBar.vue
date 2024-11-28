@@ -67,7 +67,7 @@ function closeMenuAndDropdown() {
           <li>
             <NuxtLink
               to="/credit-immobilier/pret-residence-principale"
-              class="list-item px-4 py-2 border-t-2"
+              class="list-item px-4 py-2"
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">

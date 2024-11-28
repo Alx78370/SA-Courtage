@@ -16,7 +16,7 @@ const options = {
       </p>
     </div>
     <div>
-      <CalendlyInlineWidget class="rounded-e-xl" v-bind="options" />
+      <CalendlyInlineWidget v-bind="options" />
     </div>
   </div>
 </template>
