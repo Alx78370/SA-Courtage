@@ -3,5 +3,5 @@ import maisonSecondaireImage from '@/assets/images/maison-secondaire.webp'
 </script>
 
 <template>
-  <Banner title="Prêt pour résidence principale" :image-src="maisonSecondaireImage" />
+  <Banner title="Prêt pour résidence secondaire" :image-src="maisonSecondaireImage" />
 </template>

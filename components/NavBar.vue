@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const isMenuOpen = ref(false)
 const isDropdownOpen = ref(false)
+const navRef = ref<HTMLElement | null>(null)
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
@@ -16,10 +15,24 @@ function closeMenuAndDropdown() {
   isMenuOpen.value = false
   isDropdownOpen.value = false
 }
+
+function handleOutsideClick(event: MouseEvent) {
+  if (navRef.value && !navRef.value.contains(event.target as Node)) {
+    closeMenuAndDropdown()
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleOutsideClick)
+})
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleOutsideClick)
+})
 </script>
 
 <template>
-  <nav class="container mx-auto flex items-center justify-between p-4">
+  <nav ref="navRef" class="container mx-auto flex items-center justify-between p-4">
     <NuxtLink
       to="/"
       class="text-2xl font-bold text-gray-800"
@@ -54,7 +67,7 @@ function closeMenuAndDropdown() {
     >
       <li class="relative">
         <button
-          class="flex items-center gap-2 text-gray-800 px-4 py-2 focus:outline-none"
+          class="flex items-center gap-2 w-full text-gray-800 px-4 py-2 focus:outline-none"
           @click="toggleDropdown"
         >
           Crédit immobilier
