@@ -1,4 +1,5 @@
 <template>
-  <h1>Contact</h1>
-  <p>Vous souhaitez nous contacter ?</p>
+  <section class="px-5 py-10">
+    <AgendaHome />
+  </section>
 </template>
