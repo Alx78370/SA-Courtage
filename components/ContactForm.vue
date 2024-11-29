@@ -8,6 +8,10 @@ const validationMessages = ref({
   required: () => ('Ce champ est obligatoire'),
   email: () => ('Veuillez saisir une adresse email valide'),
 })
+const fullName = ref({
+  firstName: '',
+  lastName: '',
+})
 
 async function sendMail(formData: Message) {
   const { email, subject, message } = formData
@@ -16,8 +20,9 @@ async function sendMail(formData: Message) {
       from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
       to: import.meta.env.VITE_MAIL_TO,
       replyTo: email,
-      subject,
+      subject: `Nouveau message de ${fullName.value.firstName} ${fullName.value.lastName} : ${subject}`,
       text: message,
+
     })
     submitted.value = true
     reset('contact-form')
@@ -30,6 +35,9 @@ async function sendMail(formData: Message) {
 
 <template>
   <div class="border-2 rounded-3xl bg-white shadow-2xl p-5">
+    <div>
+      
+    </div>
     <FormKit
       id="contact-form"
       data-aos="fade-right"
@@ -38,6 +46,30 @@ async function sendMail(formData: Message) {
       class="space-y-4"
       @submit="sendMail"
     >
+      <FormKit
+        v-model="fullName" type="group"
+      >
+        <div class="">
+          <FormKit
+            type="text"
+            label="Prénom"
+            name="firstName"
+            placeholder="Votre prénom"
+            validation="required"
+            validation-visibility="dirty"
+            :validation-messages="validationMessages"
+          />
+          <FormKit
+            type="text"
+            name="lastName"
+            label="Nom"
+            placeholder="Votre nom"
+            validation="required"
+            validation-visibility="dirty"
+            :validation-messages="validationMessages"
+          />
+        </div>
+      </formkit>
       <FormKit
         type="email"
         label="Email"
