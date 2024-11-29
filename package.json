@@ -12,11 +12,13 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@formkit/nuxt": "^1.6.9",
     "@nuxt/icon": "^1.8.2",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@primevue/themes": "^4.2.3",
     "nuxt": "^3.14.1592",
     "nuxt-calendly": "^0.1.21",
+    "nuxt-mail": "^5.1.1",
     "primevue": "^4.2.3",
     "vue": "latest",
     "vue-router": "latest"
