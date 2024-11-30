@@ -142,6 +142,15 @@ onBeforeUnmount(() => {
       </li>
       <li>
         <NuxtLink
+          to="/a-propos"
+          class="block px-4 py-2"
+          @click="closeMenuAndDropdown"
+        >
+          À propos
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
           to="/contact"
           class="block px-4 py-2"
           @click="closeMenuAndDropdown"

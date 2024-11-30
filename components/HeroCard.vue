@@ -2,12 +2,10 @@
   <div
     class="flex flex-col text-white pb-5 px-5"
   >
-    <h1 class="text-4xl font-medium">
+    <h1 class="flex flex-col text-4xl font-medium pb-3">
       Sylvie Allard
+      <span class="text-lg font-normal">Courtier en prêt immobilier et assurance</span>
     </h1>
-    <h2 class="pb-3">
-      Courtier en prêt immobilier et assurance
-    </h2>
     <hr class="pb-3">
     <div class="flex items-center gap-3">
       <Icon name="system-uicons:location" />
