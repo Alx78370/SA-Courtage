@@ -1,4 +1,11 @@
+<script setup lang="ts">
+import rachatCredit from '@/assets/images/rachat-credit.webp'
+</script>
+
 <template>
-  <h1>Rachat de crédits</h1>
-  <p>Vous souhaitez racheter vos crédits ?</p>
+  <Banner
+    title="Rachat de crédits"
+    :image-src="rachatCredit"
+    image-alt="image d'un homme et une femme qui signent des papiers"
+  />
 </template>

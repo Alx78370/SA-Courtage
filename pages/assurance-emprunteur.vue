@@ -1,4 +1,10 @@
+<script setup lang="ts">
+import rpDeDos from '@/assets/images/RP_de_dos.webp'
+</script>
+
 <template>
-  <h1>Assurance emprunteur</h1>
-  <p>Vous souhaitez souscrire une assurance emprunteur ?</p>
+  <Banner 
+  title="Assurance emprunteur" 
+  :image-src="rpDeDos" 
+  image-alt="image de couple  de dos" />
 </template>
