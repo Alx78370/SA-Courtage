@@ -59,8 +59,10 @@ import poigneeDeMain from '@/assets/images/poignee_de_main.webp'
       image-alt="image d'un couple heureux devant un ordianateur"
       link="/regroupement-credits"
       details="Découvrez nos offres de regroupement de crédits."
-      class="pb-5"
     />
+  </section>
+  <section class="px-5 pb-10">
+    <CarouselBank />
   </section>
   <section class="px-5 pb-10">
     <AgendaHome />

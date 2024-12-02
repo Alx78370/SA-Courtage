@@ -23,7 +23,7 @@
       <NuxtLink to="/contact" class="flex justify-center items-center bg-blue-600 p-3 rounded-2xl min-w-32">
         Contactez-moi
       </NuxtLink>
-      <NuxtLink to="/" class="flex justify-center items-center bg-slate-100 text-black p-3 rounded-2xl min-w-32">
+      <NuxtLink to="/a-propos" class="flex justify-center items-center bg-slate-100 text-black p-3 rounded-2xl min-w-32">
         En savoir plus
       </NuxtLink>
     </div>
