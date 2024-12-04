@@ -61,10 +61,10 @@ import poigneeDeMain from '@/assets/images/poignee_de_main.webp'
       details="Découvrez nos offres de regroupement de crédits."
     />
   </section>
-  <section class="px-5 pb-10">
+  <section class="px-5 py-10 bg-white">
     <CarouselBank />
   </section>
-  <section class="px-5 pb-10">
+  <section class="px-5 py-10">
     <AgendaHome />
   </section>
 </template>

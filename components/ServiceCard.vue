@@ -33,7 +33,7 @@ defineProps({
           <h3 class="text-white text-center text-3xl z-20 border-b-2 pb-4 w-full">
             {{ title }}
           </h3>
-          <p class="text-white text-lg z-20 pt-2">
+          <p class="text-white text-center text-lg z-20 pt-2">
             {{ details }}
           </p>
         </div>

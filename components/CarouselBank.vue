@@ -1,8 +1,11 @@
 <script setup lang="ts">
+import banquePopulaireLogo from '@/assets/logo/banque-populaire-logo.svg'
 import bnpParibasLogo from '@/assets/logo/bnp-paribas-logo.svg'
 import caisseDepargneLogo from '@/assets/logo/caisse-d-epargne-logo.svg'
 import creditAgricoleLogo from '@/assets/logo/credit-agricole-logo.svg'
 import creditMutuelLogo from '@/assets/logo/credit-mutuel-logo.svg'
+import lclLogo from '@/assets/logo/lcl-logo-bleu-signature.svg'
+import laBanquePostaleLogo from '@/assets/logo/logo-la-banque-postale-1.svg'
 import societeGeneraleLogo from '@/assets/logo/societe-generale-logo.svg'
 
 const images = ref([
@@ -30,6 +33,21 @@ const images = ref([
     itemImageSrc: creditMutuelLogo,
     thumbnailImageSrc: creditMutuelLogo,
     alt: 'Logo Crédit Mutuel',
+  },
+  {
+    itemImageSrc: banquePopulaireLogo,
+    thumbnailImageSrc: banquePopulaireLogo,
+    alt: 'Logo Banque Populaire',
+  },
+  {
+    itemImageSrc: lclLogo,
+    thumbnailImageSrc: lclLogo,
+    alt: 'Logo LCL',
+  },
+  {
+    itemImageSrc: laBanquePostaleLogo,
+    thumbnailImageSrc: laBanquePostaleLogo,
+    alt: 'Logo La Banque Postale',
   },
 ])
 
