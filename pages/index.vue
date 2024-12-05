@@ -2,9 +2,7 @@
 import accord from '@/assets/images/accord.webp'
 import appartementImage from '@/assets/images/appartement.webp'
 import coupleContent from '@/assets/images/couple_content.webp'
-import maisonPrincipaleImage from '@/assets/images/maison-principale.webp'
-import maisonSecondaireImage from '@/assets/images/maison-secondaire.webp'
-import poigneeDeMain from '@/assets/images/poignee_de_main.webp'
+import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
 </script>
 
 <template>
@@ -14,19 +12,11 @@ import poigneeDeMain from '@/assets/images/poignee_de_main.webp'
   </section>
   <section class="px-5 py-10">
     <ServiceCard
-      title="Prêt pour résidence principale"
-      :image-src="maisonPrincipaleImage"
-      image-alt="image de résidence principale"
-      link="/credit-immobilier/pret-residence-principale"
+      title="Prêt pour résidence principale ou secondaire"
+      :image-src="maisonPrincipaleOuSecondaireImage"
+      image-alt="image de couple recevant la clé de leur maison"
+      link="/credit-immobilier/pret-residence-principale-ou-secondaire"
       details="Découvrez nos offres de prêt pour votre résidence principale."
-      class="pb-5"
-    />
-    <ServiceCard
-      title="Prêt pour résidence secondaire"
-      :image-src="maisonSecondaireImage"
-      image-alt="image de résidence secondaire"
-      link="/credit-immobilier/pret-residence-secondaire"
-      details="Découvrez nos offres de prêt pour votre résidence secondaire."
       class="pb-5"
     />
     <ServiceCard
@@ -38,27 +28,28 @@ import poigneeDeMain from '@/assets/images/poignee_de_main.webp'
       class="pb-5"
     />
     <ServiceCard
-      title="Assurance emprunteur"
+      title="Rachat de soulte"
       :image-src="accord"
-      image-alt="image de main qui se serrent"
-      link="/assurance-emprunteur"
-      details="Découvrez nos offres d'assurance emprunteur."
+      image-alt="image d'une pognée de main"
+      link="/credit-immobilier/rachat-soulte"
+      details="Découvrez nos offres de rachat de soulte."
       class="pb-5"
     />
     <ServiceCard
       title="Rachat de crédits"
-      :image-src="poigneeDeMain"
-      image-alt="image d'un couple qui serre la main à quelqu'un"
-      link="/rachat-credits"
+      :image-src="accord"
+      image-alt="image d'une pognée de main"
+      link="/credit-immobilier/rachat-credits"
       details="Découvrez nos offres de rachat de crédits."
       class="pb-5"
     />
     <ServiceCard
-      title="Regroupement de crédits"
+      title="Assurance emprunteur"
       :image-src="coupleContent"
-      image-alt="image d'un couple heureux devant un ordianateur"
-      link="/regroupement-credits"
-      details="Découvrez nos offres de regroupement de crédits."
+      image-alt="image de couple content"
+      link="/assurance-emprunteur"
+      details="Découvrez nos offres d'assurance emprunteur."
+      class="pb-5"
     />
   </section>
   <section class="px-5 py-10 bg-white">

@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import rachatCredit from '@/assets/images/rachat-credit.webp'
+import accord from '@/assets/images/accord.webp'
 </script>
 
 <template>
   <Banner
     title="Rachat de crédits"
-    :image-src="rachatCredit"
-    image-alt="image d'un homme et une femme qui signent des papiers"
+    :image-src="accord"
+    image-alt="image d'une pognée de main"
   />
   <div class="text-lg border-2 shadow-2xl rounded-3xl p-5 m-5">
     <p>

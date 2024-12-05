@@ -79,34 +79,45 @@ onBeforeUnmount(() => {
         >
           <li>
             <NuxtLink
-              to="/credit-immobilier/pret-residence-principale"
+              to="/credit-immobilier/pret-residence-principale-ou-secondaire"
               class="list-item px-4 py-2"
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
-                <Icon name="icon-park:dot" />Résidence principale
-              </div>
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink
-              to="/credit-immobilier/pret-residence-secondaire"
-              class="list-item px-4 py-2"
-              @click="closeMenuAndDropdown"
-            >
-              <div class="flex items-center gap-2">
-                <Icon name="icon-park:dot" />Résidence secondaire
+                <Icon name="icon-park:dot" />Résidence principale ou secondaire
               </div>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink
               to="/credit-immobilier/pret-investissement-locatif"
-              class="list-item px-4 pt-2 pb-3 border-b-2"
+              class="list-item px-4 py-2"
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
                 <Icon name="icon-park:dot" />Investissement locatif
+              </div>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/credit-immobilier/rachat-soulte"
+              class="list-item px-4 py-2"
+              @click="closeMenuAndDropdown"
+            >
+              <div class="flex items-center gap-2">
+                <Icon name="icon-park:dot" />Rachat de soulte
+              </div>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/credit-immobilier/rachat-credits"
+              class="list-item px-4 pt-2 pb-3 border-b-2"
+              @click="closeMenuAndDropdown"
+            >
+              <div class="flex items-center gap-2">
+                <Icon name="icon-park:dot" />Rachat de crédits
               </div>
             </NuxtLink>
           </li>
@@ -120,24 +131,6 @@ onBeforeUnmount(() => {
           @click="closeMenuAndDropdown"
         >
           Assurance emprunteur
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink
-          to="/regroupement-credits"
-          class="block px-4 py-2"
-          @click="closeMenuAndDropdown"
-        >
-          Regroupement de crédits
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink
-          to="/rachat-credits"
-          class="block px-4 py-2"
-          @click="closeMenuAndDropdown"
-        >
-          Rachat de crédits
         </NuxtLink>
       </li>
       <li>

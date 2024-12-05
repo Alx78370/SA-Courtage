@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import rpDeDos from '@/assets/images/RP_de_dos.webp'
+import coupleContent from '@/assets/images/couple_content.webp'
 </script>
 
 <template>
   <Banner
     title="Assurance emprunteur"
-    :image-src="rpDeDos"
-    image-alt="image de couple  de dos"
+    :image-src="coupleContent"
+    image-alt="image de couple content"
   />
   <div class="text-lg border-2 shadow-2xl rounded-3xl p-5 m-5">
     <p>
