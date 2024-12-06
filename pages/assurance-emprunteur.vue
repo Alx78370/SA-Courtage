@@ -34,7 +34,7 @@ import coupleContent from '@/assets/images/couple_content.webp'
         </ul>
       </div>
       <div class="flex justify-center pt-10">
-        <a href="@/public/.pdf " download="PPS.pdf" class="bg-blue-500 rounded-2xl p-3 text-white">Télécharger le document</a>
+        <a href="/questionnaire-assurance.pdf " download="questionnaire-assurance.pdf" class="bg-blue-500 rounded-2xl p-3 text-white">Télécharger le document</a>
       </div>
     </div>
   </section>
