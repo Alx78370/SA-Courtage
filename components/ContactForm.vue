@@ -14,13 +14,13 @@ const fullName = ref({
 })
 
 async function sendMail(formData: Message) {
-  const { email, subject, message } = formData
+  const { email, message } = formData
   try {
     await mail.send({
       from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
       to: import.meta.env.VITE_MAIL_TO,
       replyTo: email,
-      subject: `Nouveau message de ${fullName.value.firstName} ${fullName.value.lastName} : ${subject}`,
+      subject: `Demande de contact de ${fullName.value.firstName} ${fullName.value.lastName}`,
       text: message,
 
     })
@@ -81,15 +81,6 @@ async function sendMail(formData: Message) {
         name="email"
         validation="required|email"
         placeholder="Votre adresse email"
-        validation-visibility="dirty"
-        :validation-messages="validationMessages"
-      />
-      <FormKit
-        type="text"
-        label="Objet*"
-        name="subject"
-        validation="required"
-        placeholder="Objet du message"
         validation-visibility="dirty"
         :validation-messages="validationMessages"
       />
