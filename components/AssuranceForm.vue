@@ -109,7 +109,7 @@ async function sendMail(formData: Message) {
       />
       <FormKit
         type="file"
-        label="Document*"
+        label="Documents*"
         name="document"
         help="Seuls les fichiers PDF sont acceptés."
         prefix-icon="filePdf"
