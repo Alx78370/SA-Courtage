@@ -34,14 +34,11 @@ async function sendMail(formData: Message) {
 </script>
 
 <template>
-  <div class="border-2 rounded-3xl bg-white shadow-2xl p-5">
-    <div class="border-b-2 mb-3 pb-3">
-      <h3 class="text-4xl border-b-2 mb-3 pb-3">
+  <div>
+    <div class="border-b-2 border-slate-300 mb-3 pb-3">
+      <h3 class="text-2xl text-center font-semibold pb-3">
         Contactez-moi !
       </h3>
-      <p>
-        Vous avez une question, un projet ou une demande de devis ? N'hésitez pas à me contacter en remplissant le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais.
-      </p>
     </div>
     <FormKit
       id="contact-form"

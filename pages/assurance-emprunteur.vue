@@ -11,16 +11,21 @@ import coupleContent from '@/assets/images/couple_content.webp'
     />
   </section>
   <section>
-    <div class="text-lg border-2 shadow-2xl rounded-3xl p-5 m-5">
+    <div class="text-lg border-2 shadow-xl rounded-3xl p-5 mx-5 mt-10 bg-white">
+      <h2 class="text-2xl font-semibold text-center pb-5">
+        Nouvelle assurance ou changement d'assurance de prêt ?
+      </h2>
       <p class="pb-5">
-        Nouvelle assurance ou changement d'assurance de prêt ? Je compare les offres et vous garantis une couverture adaptée à votre situation, au meilleur tarif.
+        Je compare les offres et vous garantis une couverture adaptée à votre situation, au meilleur tarif.
+      </p>
+      <p class="pb-5 font-medium">
+        Devis gratuit :
       </p>
       <p class="pb-5">
-        Devis gratuit :
         Pour vérifier l'économie réalisable avec un changement d'assurance sur votre prêt immobilier en cours.
       </p>
       <div>
-        <p class="pb-5">
+        <p class="pb-5 font-medium">
           Procédure :
         </p>
         <ul class="list-disc list-inside">
@@ -29,7 +34,7 @@ import coupleContent from '@/assets/images/couple_content.webp'
         </ul>
       </div>
       <div class="flex justify-center pt-5">
-        <a href="@/public/PPS.pdf " download="PPS.pdf" class="bg-blue-500 rounded-3xl p-3 text-white">Télécharger le document</a>
+        <a href="@/public/PPS.pdf " download="PPS.pdf" class="bg-blue-500 rounded-2xl p-3 text-white">Télécharger le document</a>
       </div>
     </div>
   </section>

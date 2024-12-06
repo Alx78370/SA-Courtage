@@ -4,7 +4,7 @@ import coupleEnRecherche from '@/assets/images/couple-en-recherche.webp'
 
 <template>
   <Banner title="À propos" :image-src="coupleEnRecherche" image-alt="image de Sylvie Allard" />
-  <div class="text-lg border-2 shadow-2xl rounded-3xl p-5 m-5">
+  <div class="text-lg border-2 shadow-xl rounded-3xl p-5 m-5">
     <p>
       Depuis 2018, j'accompagne des centaines de clients dans leur recherche de financement et assurance emprunteur pour leur projet d'acquisition immobilière dans toute la France.
 

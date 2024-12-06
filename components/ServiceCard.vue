@@ -25,7 +25,7 @@ defineProps({
 
 <template>
   <article>
-    <div class="relative shadow-xl w-full">
+    <div class="relative shadow-xl w-full rounded-3xl">
       <NuxtLink :to="link">
         <img :src="imageSrc" :alt="imageAlt" class="w-full h-52 object-cover rounded-3xl">
         <div class="bg-slate-900 opacity-40 absolute inset-0 rounded-3xl" />

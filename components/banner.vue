@@ -21,7 +21,7 @@ defineProps({
     <img :src="imageSrc" :alt="imageAlt" class="w-full h-52 object-cover">
     <div class="bg-slate-900 opacity-30 absolute inset-0" />
     <div class="absolute inset-0 flex items-center justify-center px-5">
-      <h1 class="text-white text-center text-4xl z-20">
+      <h1 class="text-white text-center text-4xl font-bold z-20">
         {{ title }}
       </h1>
     </div>
