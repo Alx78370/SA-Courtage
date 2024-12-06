@@ -2,5 +2,5 @@ export interface Message {
   email: string
   subject: string
   message: string
-  document?: File;
+  document?: Array<{ file: File }>
 }
