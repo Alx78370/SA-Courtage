@@ -2,6 +2,7 @@
 import accord from '@/assets/images/accord.webp'
 import appartementImage from '@/assets/images/appartement.webp'
 import coupleContent from '@/assets/images/couple_content.webp'
+import rachatSoulte from '@/assets/images/rachatSoulte.webp'
 import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
 </script>
 
@@ -29,7 +30,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
     />
     <ServiceCard
       title="Rachat de soulte"
-      :image-src="accord"
+      :image-src="rachatSoulte"
       image-alt="image d'une pognée de main"
       link="/credit-immobilier/rachat-soulte"
       details="Découvrez nos offres de rachat de soulte."
@@ -49,7 +50,6 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
       image-alt="image de couple content"
       link="/assurance-emprunteur"
       details="Découvrez nos offres d'assurance emprunteur."
-      class="pb-5"
     />
   </section>
   <section class="px-5 py-10 bg-white">

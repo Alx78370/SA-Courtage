@@ -14,21 +14,27 @@ const fullName = ref({
 })
 
 async function sendMail(formData: Message) {
-  const { email, subject, message } = formData
+  const { email, message, document } = formData
+
   try {
+    const attachments = document
+      ? [{ filename: document.name, content: await document.arrayBuffer() }]
+      : []
+
     await mail.send({
       from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
       to: import.meta.env.VITE_MAIL_TO,
       replyTo: email,
-      subject: `Nouveau message de ${fullName.value.firstName} ${fullName.value.lastName} : ${subject}`,
-      text: message,
-
+      subject: `Demande de devis pour assurance emprunteur par ${fullName.value.firstName} ${fullName.value.lastName}`,
+      text: message || 'Pas de message fourni.',
+      attachments,
     })
+
     submitted.value = true
     reset('contact-form')
   }
   catch (error) {
-    console.error('Erreur lors de l\'envoi du message:', error)
+    console.error('Erreur lors de l\'envoi du message :', error)
   }
 }
 </script>
@@ -36,12 +42,9 @@ async function sendMail(formData: Message) {
 <template>
   <div class="border-2 rounded-3xl bg-white shadow-2xl p-5">
     <div class="border-b-2 mb-3 pb-3">
-      <h3 class="text-4xl border-b-2 mb-3 pb-3">
-        Contactez-moi !
+      <h3 class="text-4xl text-center mb-3 pb-3">
+        Envoi de demande de devis pour assurance emprunteur
       </h3>
-      <p>
-        Vous avez une question, un projet ou une demande de devis ? N'hésitez pas à me contacter en remplissant le formulaire ci-dessous. Je vous répondrai dans les plus brefs délais.
-      </p>
     </div>
     <FormKit
       id="contact-form"
@@ -85,27 +88,27 @@ async function sendMail(formData: Message) {
         :validation-messages="validationMessages"
       />
       <FormKit
-        type="text"
-        label="Objet*"
-        name="subject"
-        validation="required"
-        placeholder="Objet du message"
+        type="textarea"
+        label="Message"
+        name="message"
+        placeholder="Votre message"
         validation-visibility="dirty"
         :validation-messages="validationMessages"
       />
       <FormKit
-        type="textarea"
-        label="Message*"
-        name="message"
+        type="file"
+        label="Document*"
+        name="document"
+        prefix-icon="filePdf"
+        accept=".pdf"
         validation="required"
-        placeholder="Votre message"
         validation-visibility="dirty"
         :validation-messages="validationMessages"
       />
     </FormKit>
     <div v-if="submitted">
       <p class="text-md text-green-500">
-        {{ 'Votre message a bien été envoyé.' }}
+        {{ 'Votre document a bien été envoyé.' }}
       </p>
     </div>
   </div>

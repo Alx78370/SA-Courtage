@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import rachatSoulte from '@/assets/images/accord.webp'
+import rachatSoulte from '@/assets/images/rachatSoulte.webp'
 </script>
 
 <template>
@@ -10,9 +10,7 @@ import rachatSoulte from '@/assets/images/accord.webp'
   />
   <div class="text-lg border-2 shadow-2xl rounded-3xl p-5 m-5">
     <p>
-      Le rachat de soulte est une opération financière qui permet à un indivisaire de racheter la part de ses co-indivisaires dans un bien immobilier commun.
-      Cette opération est souvent réalisée dans le cadre d'une succession ou d'un divorce.
-      Je vous accompagne dans cette démarche pour vous permettre de devenir propriétaire à part entière du bien.
+      Dans les moments difficiles après un divorce, je vous accompagne pour trouver les meilleures solutions de financement de soulte.
     </p>
   </div>
 </template>

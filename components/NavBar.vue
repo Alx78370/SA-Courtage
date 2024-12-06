@@ -84,7 +84,7 @@ onBeforeUnmount(() => {
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
-                <Icon name="icon-park:dot" />Résidence principale ou secondaire
+                <Icon name="iconamoon:arrow-right-2-duotone" />Résidence principale ou secondaire
               </div>
             </NuxtLink>
           </li>
@@ -95,7 +95,7 @@ onBeforeUnmount(() => {
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
-                <Icon name="icon-park:dot" />Investissement locatif
+                <Icon name="iconamoon:arrow-right-2-duotone" />Investissement locatif
               </div>
             </NuxtLink>
           </li>
@@ -106,7 +106,7 @@ onBeforeUnmount(() => {
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
-                <Icon name="icon-park:dot" />Rachat de soulte
+                <Icon name="iconamoon:arrow-right-2-duotone" />Rachat de soulte
               </div>
             </NuxtLink>
           </li>
@@ -117,13 +117,13 @@ onBeforeUnmount(() => {
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
-                <Icon name="icon-park:dot" />Rachat de crédits
+                <Icon name="iconamoon:arrow-right-2-duotone" />Rachat de crédits
               </div>
             </NuxtLink>
           </li>
         </ul>
       </li>
-      <li v-if="isDropdownOpen" class="h-32" />
+      <li v-if="isDropdownOpen" class="h-[165px]" />
       <li>
         <NuxtLink
           to="/assurance-emprunteur"
