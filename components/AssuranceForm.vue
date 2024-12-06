@@ -103,7 +103,7 @@ async function sendMail(formData: Message) {
         type="textarea"
         label="Message"
         name="message"
-        placeholder="Votre message"
+        placeholder="Votre message (facultatif)"
         validation-visibility="dirty"
         :validation-messages="validationMessages"
       />

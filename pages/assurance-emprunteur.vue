@@ -11,8 +11,8 @@ import coupleContent from '@/assets/images/couple_content.webp'
     />
   </section>
   <section>
-    <div class="text-lg border-2 shadow-xl rounded-3xl p-5 mx-5 mt-10 bg-white">
-      <h2 class="text-2xl font-semibold text-center pb-5">
+    <div class="text-lg rounded-3xl p-5 mt-5">
+      <h2 class="text-2xl font-semibold pb-5">
         Nouvelle assurance ou changement d'assurance de prêt ?
       </h2>
       <p class="pb-5">
@@ -33,7 +33,7 @@ import coupleContent from '@/assets/images/couple_content.webp'
           <li>Transmettez-moi les documents demandés via le formulaire ci-dessous pour une étude gratuite.</li>
         </ul>
       </div>
-      <div class="flex justify-center pt-5">
+      <div class="flex justify-center pt-10">
         <a href="@/public/PPS.pdf " download="PPS.pdf" class="bg-blue-500 rounded-2xl p-3 text-white">Télécharger le document</a>
       </div>
     </div>
