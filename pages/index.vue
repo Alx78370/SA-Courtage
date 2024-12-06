@@ -17,7 +17,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
       :image-src="maisonPrincipaleOuSecondaireImage"
       image-alt="image de couple recevant la clé de leur maison"
       link="/credit-immobilier/pret-residence-principale-ou-secondaire"
-      details="Découvrez nos offres de prêt pour votre résidence principale."
+      details="Un accompagnement personnalisé pour un prêt sur mesure 100% adapté à votre projet."
       class="pb-5"
     />
     <ServiceCard
@@ -25,7 +25,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
       :image-src="appartementImage"
       image-alt="image d'appartement"
       link="/credit-immobilier/pret-investissement-locatif"
-      details="Découvrez nos offres de prêt pour votre investissement locatif."
+      details="Des conditions de financement négociées pour optimiser votre investissement."
       class="pb-5"
     />
     <ServiceCard
@@ -33,15 +33,15 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
       :image-src="rachatSoulte"
       image-alt="image d'une pognée de main"
       link="/credit-immobilier/rachat-soulte"
-      details="Découvrez nos offres de rachat de soulte."
+      details="Les meilleures solutions pour devenir propriétaire à part entière."
       class="pb-5"
     />
     <ServiceCard
-      title="Rachat de crédits"
+      title="Rachat de crédit"
       :image-src="accord"
       image-alt="image d'une pognée de main"
-      link="/credit-immobilier/rachat-credits"
-      details="Découvrez nos offres de rachat de crédits."
+      link="/credit-immobilier/rachat-credit"
+      details="Vérifions ensemble la pertinence d’un rachat de crédit."
       class="pb-5"
     />
     <ServiceCard
@@ -49,7 +49,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
       :image-src="coupleContent"
       image-alt="image de couple content"
       link="/assurance-emprunteur"
-      details="Découvrez nos offres d'assurance emprunteur."
+      details="Des offres d’assurance emprunteur pour une couverture adaptée à votre profil."
     />
   </section>
   <section class="px-5 py-10 bg-white">

@@ -39,6 +39,6 @@ import coupleContent from '@/assets/images/couple_content.webp'
     </div>
   </section>
   <section class="px-5 py-10">
-    <AssuranceForm />
+    <InsuranceForm />
   </section>
 </template>

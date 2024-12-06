@@ -112,12 +112,12 @@ onBeforeUnmount(() => {
           </li>
           <li>
             <NuxtLink
-              to="/credit-immobilier/rachat-credits"
+              to="/credit-immobilier/rachat-credit"
               class="list-item px-4 pt-2 pb-3 border-b-2"
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
-                <Icon name="iconamoon:arrow-right-2-duotone" />Rachat de crédits
+                <Icon name="iconamoon:arrow-right-2-duotone" />Rachat de crédit
               </div>
             </NuxtLink>
           </li>
