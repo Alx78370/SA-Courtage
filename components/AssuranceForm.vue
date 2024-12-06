@@ -111,6 +111,7 @@ async function sendMail(formData: Message) {
         type="file"
         label="Document*"
         name="document"
+        help="Seuls les fichiers PDF sont acceptés."
         prefix-icon="filePdf"
         accept=".pdf"
         validation="required"
