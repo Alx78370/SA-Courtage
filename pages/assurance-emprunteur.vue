@@ -12,7 +12,7 @@ import coupleContent from '@/assets/images/couple_content.webp'
   </section>
   <section>
     <div class="text-lg rounded-3xl p-5 mt-5">
-      <h2 class="text-2xl font-semibold pb-5">
+      <h2 class="text-2xl text-center font-semibold pb-10">
         Nouvelle assurance ou changement d'assurance de prêt ?
       </h2>
       <p class="pb-5">
@@ -33,9 +33,12 @@ import coupleContent from '@/assets/images/couple_content.webp'
           <li>Transmettez-moi les documents demandés via le formulaire ci-dessous pour une étude gratuite.</li>
         </ul>
       </div>
-      <div class="flex justify-center pt-10">
-        <a href="/questionnaire-assurance.pdf " download="questionnaire-assurance.pdf" class="bg-blue-500 rounded-2xl p-3 text-white">Télécharger le document</a>
-      </div>
+      <ButtonDownloadFile
+        file="/questionnaire-assurance.pdf"
+        download-name="questionnaire-assurance.pdf"
+        button-text="Télécharger le document"
+        class="mt-5"
+      />
     </div>
   </section>
   <section class="px-5 py-10">
