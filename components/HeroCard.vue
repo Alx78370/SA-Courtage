@@ -13,7 +13,7 @@
     </div>
     <div class="flex items-center gap-3">
       <Icon name="bi:phone" />
-      06.20.30.25.39
+      06 40 96 02 03
     </div>
     <div class="flex items-center gap-3 pb-6">
       <Icon name="lets-icons:e-mail" />

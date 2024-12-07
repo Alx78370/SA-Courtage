@@ -10,7 +10,7 @@ import fakeTrophée from '@/assets/images/fake-trophée.webp'
   <section class="px-5 py-10">
     <article class="text-lg">
       <p class="pb-5">
-        Depuis 2018, j'ai accompagné des centaines de clients dans leur recherche de financement et assurance emprunteur pour leur projet d'acquisition immobilière dans toute la France.
+        Depuis 2018, j'ai accompagné des <span class="font-bold">centaines de clients</span>  dans leur recherche de financement et assurance emprunteur pour leur projet d'acquisition immobilière dans toute la France.
       </p>
       <div class="flex flex-col w-44 h-52 float-left mr-5">
         <img :src="fakeTrophée" alt="image de Sylvie Allard avec ses trophées" class="rounded-3xl w-44 h-44 object-cover">
@@ -19,13 +19,13 @@ import fakeTrophée from '@/assets/images/fake-trophée.webp'
         </p>
       </div>
       <p class="pb-5">
-        Avec une écoute attentive, mon but est de trouver la solution optimale et personnalisée, avec une prise en charge globale du début à la fin du processus. Rien ne sera laissé au hasard !
+        Avec une écoute attentive, mon but est de trouver la<span class="font-bold"> solution optimale </span>et personnalisée, avec <span class="font-bold">une prise en charge globale du début à la fin du processus</span>. Rien ne sera laissé au hasard !
       </p>
       <p class="pb-5">
         Ma disponibilité, ma réactivité, mon expérience et mon expertise vous accompagneront dans chaque étape du financement, jusqu'à la remise des clés de votre bien.
       </p>
       <p>
-        Mon objectif premier : Vous proposer une offre unique, à l'image de votre projet.
+        Mon objectif premier : Vous proposer une <span class="font-bold">offre unique</span>, à l'image de votre projet.
       </p>
     </article>
   </section>
