@@ -48,7 +48,11 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
       </ul>
     </article>
   </section>
-  <section class="px-5 pb-10">
+  <section class="relative h-section">
+    <img src="@/assets/images/building.webp" alt="image de building" class="h-section object-cover shadow-xl">
+    <StepsCard class="absolute px-5 py-10 top-0 left-0 bg-opacity-40 bg-slate-900 w-screen h-section" />
+  </section>
+  <section class="px-5 py-10">
     <AgendaHome />
   </section>
 </template>
