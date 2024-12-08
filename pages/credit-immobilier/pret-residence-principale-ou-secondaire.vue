@@ -23,12 +23,13 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
         En savoir plus :
       </p>
       <p>
-        Pour plus d'informations sur les documents et pièces à fournir, téléchargez le document ci-dessous.
+        Pour prévisualiser les documents et pièces à fournir, cliquer sur le bouton ci-dessous.
       </p>
       <ButtonDownloadFile
-        file="/questionnaire-assurance.pdf"
-        download-name="questionnaire-assurance.pdf"
-        button-text="Télécharger le document"
+        file="/documents/liste-documents.pdf"
+        download-name="liste-documents.pdf"
+        button-text="Documents et pièces à fournir"
+        action="preview"
         class="mt-5"
       />
       <ul class="flex flex-col gap-5 pt-10">

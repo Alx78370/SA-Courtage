@@ -12,6 +12,11 @@ defineProps({
     type: String,
     default: 'Télécharger le document',
   },
+  action: {
+    type: String,
+    default: 'download',
+    validator: (value: string) => ['download', 'preview'].includes(value),
+  },
 })
 </script>
 
@@ -19,7 +24,9 @@ defineProps({
   <div class="flex justify-center">
     <a
       :href="file"
-      :download="downloadName"
+      :download="action === 'download' ? downloadName : undefined"
+      :target="action === 'preview' ? '_blank' : undefined"
+      rel="noopener noreferrer"
       class="bg-blue-500 rounded-2xl shadow-xl p-3 text-white"
     >
       {{ buttonText }}

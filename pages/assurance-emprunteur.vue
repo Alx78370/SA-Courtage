@@ -34,9 +34,10 @@ import coupleContent from '@/assets/images/couple_content.webp'
         </ul>
       </div>
       <ButtonDownloadFile
-        file="/questionnaire-assurance.pdf"
+        file="/documents/questionnaire-assurance.pdf"
         download-name="questionnaire-assurance.pdf"
         button-text="Télécharger le document"
+        action="download"
         class="mt-5"
       />
     </div>
