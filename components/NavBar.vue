@@ -2,6 +2,7 @@
 const isMenuOpen = ref(false)
 const isDropdownOpen = ref(false)
 const navRef = ref<HTMLElement | null>(null)
+const route = useRoute()
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value
@@ -32,7 +33,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <nav ref="navRef" class="fixed z-50 h-20 bg-slate-100 container mx-auto flex items-center justify-between p-4">
+  <nav ref="navRef" class="fixed z-50 h-20 bg-slate-100 container flex items-center justify-between p-4 md:text-lg">
     <NuxtLink
       to="/"
       class="text-2xl font-bold text-gray-800"
@@ -40,7 +41,7 @@ onBeforeUnmount(() => {
     >
       <img src="../assets/logo/Logo_capture_proche.png" alt="Logo" class="w-24 h-14 object-cover">
     </NuxtLink>
-    <div class="lg:hidden">
+    <div class="md:hidden">
       <button
         class="text-gray-800 focus:outline-none"
         @click="toggleMenu"
@@ -63,11 +64,12 @@ onBeforeUnmount(() => {
     </div>
     <ul
       :class="isMenuOpen ? 'block' : 'hidden'"
-      class="lg:flex lg:items-center lg:space-x-6 flex-col lg:flex-row absolute lg:static top-20 left-0 lg:top-0 lg:left-0 bg-slate-100 lg:bg-transparent w-full lg:w-auto shadow-lg lg:shadow-none z-50"
+      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-red-500 w-full md:w-auto shadow-lg md:shadow-none z-50"
     >
       <li class="relative">
         <button
-          class="flex items-center gap-2 w-full text-gray-800 px-4 py-2 focus:outline-none"
+          :class="{ 'font-bold': route.path === '/credit-immobilier/pret-residence-principale-ou-secondaire' || route.path === '/credit-immobilier/pret-investissement-locatif' || route.path === '/credit-immobilier/rachat-soulte' || route.path === '/credit-immobilier/rachat-credit' }"
+          class="flex items-center gap-2 w-full text-gray-800 px-4 py-2 focus:outline-none hover:underline hover:underline-offset-2"
           @click="toggleDropdown"
         >
           Crédit immobilier
@@ -75,12 +77,13 @@ onBeforeUnmount(() => {
         </button>
         <ul
           v-if="isDropdownOpen"
-          class="absolute left-0 top-full w-full bg-slate-100 rounded-lg"
+          class="absolute w-full bg-slate-100 rounded-lg md:w-[350px] px-4 md:py-2"
         >
           <li>
             <NuxtLink
               to="/credit-immobilier/pret-residence-principale-ou-secondaire"
-              class="list-item px-4 py-2"
+              :class="{ 'font-semibold': route.path === '/credit-immobilier/pret-residence-principale-ou-secondaire' }"
+              class="list-item py-2 hover:bg-slate-200"
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
@@ -91,7 +94,8 @@ onBeforeUnmount(() => {
           <li>
             <NuxtLink
               to="/credit-immobilier/pret-investissement-locatif"
-              class="list-item px-4 py-2"
+              :class="{ 'font-semibold': route.path === '/credit-immobilier/pret-investissement-locatif' }"
+              class="list-item py-2 hover:bg-slate-200"
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
@@ -102,7 +106,8 @@ onBeforeUnmount(() => {
           <li>
             <NuxtLink
               to="/credit-immobilier/rachat-soulte"
-              class="list-item px-4 py-2"
+              :class="{ 'font-semibold': route.path === '/credit-immobilier/rachat-soulte' }"
+              class="list-item py-2 hover:bg-slate-200"
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
@@ -113,7 +118,8 @@ onBeforeUnmount(() => {
           <li>
             <NuxtLink
               to="/credit-immobilier/rachat-credit"
-              class="list-item px-4 pt-2 pb-3 border-b-2"
+              :class="{ 'font-semibold': route.path === '/credit-immobilier/rachat-credit' }"
+              class="list-item pt-2 pb-3 border-b-2 md:border-b-0 hover:bg-slate-200"
               @click="closeMenuAndDropdown"
             >
               <div class="flex items-center gap-2">
@@ -127,7 +133,8 @@ onBeforeUnmount(() => {
       <li>
         <NuxtLink
           to="/assurance-emprunteur"
-          class="block px-4 py-2"
+          :class="{ 'font-bold': route.path === '/assurance-emprunteur' }"
+          class="block px-4 py-2 hover:underline hover:underline-offset-2"
           @click="closeMenuAndDropdown"
         >
           Assurance emprunteur
@@ -136,7 +143,8 @@ onBeforeUnmount(() => {
       <li>
         <NuxtLink
           to="/a-propos"
-          class="block px-4 py-2"
+          :class="{ 'font-bold': route.path === '/a-propos' }"
+          class="block px-4 py-2 hover:underline hover:underline-offset-2"
           @click="closeMenuAndDropdown"
         >
           À propos
@@ -145,7 +153,8 @@ onBeforeUnmount(() => {
       <li>
         <NuxtLink
           to="/contact"
-          class="block px-4 py-2"
+          :class="{ 'font-bold': route.path === '/contact' }"
+          class="block px-4 py-2 hover:underline hover:underline-offset-2"
           @click="closeMenuAndDropdown"
         >
           Contact
