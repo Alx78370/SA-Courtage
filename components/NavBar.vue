@@ -33,7 +33,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <nav ref="navRef" class="fixed z-50 h-20 bg-slate-100 container flex items-center justify-between p-4 md:text-lg">
+  <nav ref="navRef" class="fixed z-50 h-20 bg-slate-100 w-screen flex items-center justify-between p-4 lg:py-4 lg:px-10 md:text-lg">
     <NuxtLink
       to="/"
       class="text-2xl font-bold text-gray-800"
@@ -64,7 +64,7 @@ onBeforeUnmount(() => {
     </div>
     <ul
       :class="isMenuOpen ? 'block' : 'hidden'"
-      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-red-500 w-full md:w-auto shadow-lg md:shadow-none z-50"
+      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-slate-100 md:bg-transparent w-full md:w-auto shadow-lg md:shadow-none z-50"
     >
       <li class="relative">
         <button
@@ -82,7 +82,7 @@ onBeforeUnmount(() => {
           <li>
             <NuxtLink
               to="/credit-immobilier/pret-residence-principale-ou-secondaire"
-              :class="{ 'font-semibold': route.path === '/credit-immobilier/pret-residence-principale-ou-secondaire' }"
+              :class="{ 'font-bold': route.path === '/credit-immobilier/pret-residence-principale-ou-secondaire' }"
               class="list-item py-2 hover:bg-slate-200"
               @click="closeMenuAndDropdown"
             >
@@ -94,7 +94,7 @@ onBeforeUnmount(() => {
           <li>
             <NuxtLink
               to="/credit-immobilier/pret-investissement-locatif"
-              :class="{ 'font-semibold': route.path === '/credit-immobilier/pret-investissement-locatif' }"
+              :class="{ 'font-bold': route.path === '/credit-immobilier/pret-investissement-locatif' }"
               class="list-item py-2 hover:bg-slate-200"
               @click="closeMenuAndDropdown"
             >
@@ -106,7 +106,7 @@ onBeforeUnmount(() => {
           <li>
             <NuxtLink
               to="/credit-immobilier/rachat-soulte"
-              :class="{ 'font-semibold': route.path === '/credit-immobilier/rachat-soulte' }"
+              :class="{ 'font-bold': route.path === '/credit-immobilier/rachat-soulte' }"
               class="list-item py-2 hover:bg-slate-200"
               @click="closeMenuAndDropdown"
             >
@@ -118,7 +118,7 @@ onBeforeUnmount(() => {
           <li>
             <NuxtLink
               to="/credit-immobilier/rachat-credit"
-              :class="{ 'font-semibold': route.path === '/credit-immobilier/rachat-credit' }"
+              :class="{ 'font-bold': route.path === '/credit-immobilier/rachat-credit' }"
               class="list-item pt-2 pb-3 border-b-2 md:border-b-0 hover:bg-slate-200"
               @click="closeMenuAndDropdown"
             >
