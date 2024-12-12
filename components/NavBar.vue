@@ -59,11 +59,11 @@ onBeforeUnmount(() => {
     </div>
     <ul
       :class="isMenuOpen ? 'block' : 'hidden'"
-      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-slate-100 md:bg-transparent w-full md:w-auto shadow-lg md:shadow-none z-50"
+      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-slate-100 md:bg-transparent w-full md:w-auto  shadow-lg md:shadow-none z-50"
     >
       <DropdownMenu @close-dropdown="closeMenuAndDropdown" @update:is-dropdown-open="isDropdownOpen = $event" />
       <li v-if="isDropdownOpen" class="h-[165px]" />
-      <li>
+      <li class="lg:pr-10 xl:pr-20">
         <NuxtLink
           to="/assurance-emprunteur"
           :class="{ 'font-bold': route.path === '/assurance-emprunteur' }"
@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
           Assurance emprunteur
         </NuxtLink>
       </li>
-      <li>
+      <li class="lg:pr-10 xl:pr-20">
         <NuxtLink
           to="/a-propos"
           :class="{ 'font-bold': route.path === '/a-propos' }"
