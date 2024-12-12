@@ -75,14 +75,13 @@ const responsiveOptions = ref([
       :responsive-options="responsiveOptions"
       :num-visible="5"
       :circular="true"
-      container-style="max-width: 640px"
-      :show-item-navigators="true"
+      :show-item-navigators="false"
       :show-thumbnails="false"
       :auto-play="true"
       :transition-interval="2000"
     >
       <template #item="slotProps">
-        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 80%; display: block;">
+        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" class="block w-[80%] lg:w-[40%] xl:w-[30%]">
       </template>
       <template #thumbnail="slotProps">
         <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" style="display: block;">
