@@ -31,7 +31,7 @@ import mainSurClavier from '@/assets/images/mains-utilisant-un-clavier.webp'
       </ul>
     </div>
   </section>
-  <section id="agenda" class="px-5 pb-10">
+  <section id="agenda" class="pb-10">
     <AgendaHome />
   </section>
   <section id="form" class="px-5 py-10 bg-white">
