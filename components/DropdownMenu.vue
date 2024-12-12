@@ -6,12 +6,12 @@ const isDropdownOpen = ref(false)
 const route = useRoute()
 function toggleDropdown() {
   isDropdownOpen.value = !isDropdownOpen.value
-  emit('update:isDropdownOpen', isDropdownOpen.value);
+  emit('update:isDropdownOpen', isDropdownOpen.value)
 }
 
 function closeDropdown() {
   isDropdownOpen.value = false
-  emit('update:isDropdownOpen', isDropdownOpen.value);
+  emit('update:isDropdownOpen', isDropdownOpen.value)
   emit('closeDropdown')
 }
 </script>
@@ -25,11 +25,11 @@ function closeDropdown() {
     >
       Crédit immobilier
       <Icon v-if="!isDropdownOpen" name="iconamoon:arrow-down-2-duotone" />
-        <Icon v-else name="iconamoon:arrow-up-2-duotone" />
+      <Icon v-else name="iconamoon:arrow-up-2-duotone" />
     </button>
     <ul
       v-if="isDropdownOpen"
-      class="absolute w-full bg-slate-100 rounded-lg md:w-[350px] px-4 md:py-2"
+      class="absolute w-full bg-slate-100 rounded-lg md:w-[350px] px-4 md:py-2  z-50 "
     >
       <li>
         <NuxtLink
