@@ -29,7 +29,7 @@ function closeDropdown() {
     </button>
     <ul
       v-if="isDropdownOpen"
-      class="absolute w-full bg-slate-100 rounded-lg md:w-[350px] px-4 md:py-2  z-50 "
+      class="absolute w-full md:-left-20 bg-slate-100 rounded-lg md:w-[350px] px-4 md:p-4 z-50"
     >
       <li>
         <NuxtLink
