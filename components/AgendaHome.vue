@@ -1,18 +1,19 @@
 <script setup lang="ts">
-const options = {
-  url: 'https://calendly.com/s-a-courtage/30min',
-}
+const calendly = useCalendly()
+
+onMounted(() => {
+  calendly.initInlineWidget()
+})
 </script>
 
 <template>
-  <div class="border-2 shadow-xl py-6 rounded-3xl bg-white">
-    <div class="px-6 pb-5">
-      <h3 class="text-2xl font-semibold text-center">
-        Discutons de votre projet ensemble !
-      </h3>
-    </div>
-    <div>
-      <CalendlyInlineWidget class="px-1" v-bind="options" />
-    </div>
+  <div>
+    <h3 class="text-2xl font-semibold text-center pb-5 md:pb-0">
+      Discutons de votre projet ensemble !
+    </h3>
+    <div
+      class="calendly-inline-widget min-w-[320px] h-[630px] md:h-[800px] lg:w-[1000px] xl:w-[1200px] mx-auto"
+      data-url="https://calendly.com/s-a-courtage/30min"
+    />
   </div>
 </template>

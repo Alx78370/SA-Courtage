@@ -58,7 +58,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
     </div>
   </section>
 
-  <section class="px-5 py-10">
+  <section class="py-10">
     <AgendaHome />
   </section>
 </template>
