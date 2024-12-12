@@ -55,43 +55,35 @@ const responsiveOptions = ref([
   {
     breakpoint: '991px',
     numVisible: 4,
+    numScroll: 1,
   },
   {
     breakpoint: '767px',
     numVisible: 3,
+    numScroll: 1,
   },
   {
     breakpoint: '575px',
     numVisible: 1,
+    numScroll: 1,
   },
 ])
 </script>
 
 <template>
-  <div class="card">
-    <Galleria
-      id="fixed-galleria-id"
+  <div>
+    <Carousel
       :value="images"
+      :num-visible="4"
+      :num-scroll="1"
       :responsive-options="responsiveOptions"
-      :num-visible="5"
-      :circular="true"
+      :autoplay-interval="3000"
       :show-item-navigators="false"
-      :show-thumbnails="false"
-      :auto-play="true"
-      :transition-interval="2000"
+      :show-navigators="false"
     >
       <template #item="slotProps">
-        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" class="block w-[80%] lg:w-[40%] xl:w-[30%]">
+        <img :src="slotProps.data.itemImageSrc" :alt="slotProps.data.alt" class="md:px-10 xl:px-20">
       </template>
-      <template #thumbnail="slotProps">
-        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" style="display: block;">
-      </template>
-    </Galleria>
+    </Carousel>
   </div>
 </template>
-
-<style>
-.p-galleria {
-  border: none !important;
-}
-</style>
