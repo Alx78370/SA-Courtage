@@ -8,7 +8,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
   <section>
     <Banner title="Prêt pour résidence principale ou secondaire" :image-src="maisonPrincipaleOuSecondaireImage" image-alt="image de couple recevant la clé de leur maison" />
   </section>
-  <section class="px-5 py-10">
+  <section class="px-5 py-10 xl:px-44">
     <article class="text-lg">
       <h2 class="text-2xl text-center font-semibold pb-10">
         Concrétisez votre projet immobilier avec sérénité
@@ -19,20 +19,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
       <p>
         Vous permettre, en fonction de votre profil et de votre situation, de financer votre achat immobilier dans les meilleures conditions avec un accompagnement du calcul de l'enveloppe d'emprunt à la signature de l'acte authentique.
       </p>
-      <p class="text-xl font-medium pt-10 pb-5">
-        En savoir plus :
-      </p>
-      <p>
-        Pour prévisualiser les documents et pièces à fournir, cliquer sur le bouton ci-dessous.
-      </p>
-      <ButtonDownloadFile
-        file="/documents/liste-documents.pdf"
-        download-name="liste-documents.pdf"
-        button-text="Documents et pièces à fournir"
-        action="preview"
-        class="mt-5"
-      />
-      <ul class="flex flex-col gap-5 pt-10">
+      <ul class="flex flex-col gap-5 pt-10 lg:flex-row">
         <li class="w-full bg-white shadow-xl rounded-3xl">
           <img :src="residencePrincipale" alt="" class="rounded-t-3xl">
           <p class="text-center">
@@ -46,13 +33,26 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
           </p>
         </li>
       </ul>
+      <p class="text-xl font-medium pt-10 pb-5">
+        En savoir plus :
+      </p>
+      <p>
+        Pour prévisualiser les documents et pièces à fournir, cliquer sur le bouton ci-dessous.
+      </p>
+      <ButtonDownloadFile
+        file="/documents/liste-documents.pdf"
+        download-name="liste-documents.pdf"
+        button-text="Documents et pièces à fournir"
+        action="preview"
+        class="mt-5"
+      />
+      
     </article>
   </section>
-  <section class="relative h-section">
-    <img src="@/assets/images/building.webp" alt="image de building" class="h-section object-cover shadow-xl">
-    <StepsCard class="absolute px-5 py-10 top-0 left-0 bg-opacity-40 bg-slate-900 w-screen h-section" />
+  <section>
+    <StepsCard />
   </section>
-  <section class="px-5 py-10">
+  <section class="py-10">
     <AgendaHome />
   </section>
 </template>
