@@ -28,7 +28,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <nav ref="navRef" class="fixed z-50 h-20 bg-slate-100 w-screen flex items-center justify-between p-4 lg:py-4 lg:px-10 md:text-lg">
+  <nav ref="navRef" class="fixed z-50 h-20 bg-slate-100 w-screen flex items-center justify-between p-4 lg:py-4 lg:px-10 md:text-lg lg:text-xl">
     <NuxtLink
       to="/"
       class="text-2xl font-bold text-gray-800"

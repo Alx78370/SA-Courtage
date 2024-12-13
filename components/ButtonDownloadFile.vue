@@ -27,7 +27,7 @@ defineProps({
       :download="action === 'download' ? downloadName : undefined"
       :target="action === 'preview' ? '_blank' : undefined"
       rel="noopener noreferrer"
-      class="bg-blue-500 rounded-2xl shadow-xl p-3 text-white"
+      class="bg-blue-600 rounded-2xl shadow-lg p-3 text-white delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700 hover:shadow-xl"
     >
       {{ buttonText }}
     </a>

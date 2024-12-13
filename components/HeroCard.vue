@@ -2,7 +2,7 @@
   <div class="relative h-section w-screen">
     <img
       src="../assets/images/hero-fake.webp"
-      alt="Image héro"
+      alt="Image hero"
       class="absolute top-0 left-0 h-section w-full object-cover shadow-xl"
     />
     <div
@@ -33,13 +33,13 @@
       <div class="flex justify-center gap-5">
         <NuxtLink
           to="/contact"
-          class="flex justify-center items-center bg-blue-600 font-semibold p-3 rounded-2xl min-w-32 lg:text-lg transition delay-75 duration-300 ease-in-out hover:scale-110"
+          class="flex justify-center items-center bg-blue-600 font-semibold p-3 rounded-2xl min-w-32 lg:text-lg transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700"
         >
           Contactez-moi
         </NuxtLink>
         <NuxtLink
           to="/a-propos"
-          class="flex justify-center items-center bg-slate-100 text-black font-semibold p-3 rounded-2xl min-w-32 lg:text-lg transition delay-75 duration-300 ease-in-out hover:scale-110"
+          class="flex justify-center items-center bg-slate-100 text-black font-semibold p-3 rounded-2xl min-w-32 lg:text-lg transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-slate-200"
         >
           En savoir plus
         </NuxtLink>
