@@ -17,7 +17,7 @@ function closeDropdown() {
 </script>
 
 <template>
-  <li class="relative lg:pr-10 xl:pr-20">
+  <li class="relative lg:pr-10">
     <button
       :class="{ 'font-bold': ['/credit-immobilier/pret-residence-principale-ou-secondaire', '/credit-immobilier/pret-investissement-locatif', '/credit-immobilier/rachat-soulte', '/credit-immobilier/rachat-credit'].includes(route.path) }"
       class="flex items-center gap-2 w-full text-gray-800 px-4 py-2 focus:outline-none hover:underline hover:underline-offset-2"

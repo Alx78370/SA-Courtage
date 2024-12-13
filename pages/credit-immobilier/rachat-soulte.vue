@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import rachatSoulte from '@/assets/images/rachatSoulte.webp'
+import rachatSoulteBanner from '@/assets/images/rachatSoulte_banner.webp'
 </script>
 
 <template>
   <section>
     <Banner
       title="Rachat de soulte"
-      :image-src="rachatSoulte"
+      :image-src="rachatSoulteBanner"
       image-alt="image d'un poignée de main"
     />
   </section>
-  <section class="px-5 py-10">
-    <div class="text-lg">
-      <h2 class="text-2xl font-semibold text-center pb-10">
+  <section class="px-5 py-10 md:mx-10 xl:px-44">
+    <article class="text-lg md:text-xl">
+      <h2 class="text-2xl font-semibold text-center pb-10 md:text-3xl">
         Devenez pleinement propriétaire : votre solution pour le rachat de soulte
       </h2>
       <p class="pb-5">
@@ -25,7 +25,7 @@ import rachatSoulte from '@/assets/images/rachatSoulte.webp'
       <p class="pb-5">
         Faites-moi confiance, laissez-vous guider.
       </p>
-      <p class="text-xl font-medium pb-5">
+      <p class="text-xl font-medium pb-2">
         En savoir plus :
       </p>
       <p>
@@ -36,15 +36,14 @@ import rachatSoulte from '@/assets/images/rachatSoulte.webp'
         download-name="liste-documents.pdf"
         button-text="Documents et pièces à fournir"
         action="preview"
-        class="mt-5"
+        class="pt-10"
       />
-    </div>
+    </article>
   </section>
-  <section class="relative h-section">
-    <img src="@/assets/images/building.webp" alt="image de building" class="h-section object-cover shadow-xl">
-    <StepsCard class="absolute px-5 py-10 top-0 left-0 bg-opacity-40 bg-slate-900 w-screen h-section" />
+  <section>
+    <StepsCard />
   </section>
-  <section class="px-5 py-10">
+  <section class="py-10">
     <AgendaHome />
   </section>
 </template>

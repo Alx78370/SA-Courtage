@@ -1,19 +1,19 @@
 <script setup lang="ts">
 import residencePrincipale from '@/assets/images/maison-principale.webp'
 import residenceSecondaire from '@/assets/images/maison-secondaire.webp'
-import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
+import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos_banner.webp'
 </script>
 
 <template>
   <section>
     <Banner title="Prêt pour résidence principale ou secondaire" :image-src="maisonPrincipaleOuSecondaireImage" image-alt="image de couple recevant la clé de leur maison" />
   </section>
-  <section class="px-5 py-10 xl:px-44 text-lg md:text-xl">
+  <section class="px-5 py-10 md:mx-10 xl:px-44 text-lg md:text-xl">
     <article>
       <h2 class="text-2xl text-center font-semibold pb-10 md:text-3xl">
         Concrétisez votre projet immobilier avec sérénité
       </h2>
-      <p class="font-medium pb-5">
+      <p class="font-medium pb-2">
         Mon objectif :
       </p>
       <p>
@@ -37,7 +37,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
       </li>
     </ul>
     <article>
-      <p class="font-medium pt-10 pb-5">
+      <p class="font-medium pt-10 pb-2">
         En savoir plus :
       </p>
       <p>
@@ -48,7 +48,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
         download-name="liste-documents.pdf"
         button-text="Documents et pièces à fournir"
         action="preview"
-        class="mt-5 "
+        class="pt-10"
       />
     </article>
   </section>

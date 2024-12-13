@@ -10,7 +10,7 @@
     >
       <h1 class="flex flex-col text-4xl font-medium pb-3 md:items-center lg:text-5xl sm:border-b-2">
         Sylvie Allard
-        <span class="text-lg font-normal lg:text-2xl">
+        <span class="text-lg font-normal lg:text-2xl pt-1">
           Courtier en prêt immobilier et assurance
         </span>
       </h1>

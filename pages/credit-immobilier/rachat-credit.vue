@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import accord from '@/assets/images/accord.webp'
+import accord from '@/assets/images/accord_banner.webp'
 </script>
 
 <template>
@@ -10,9 +10,9 @@ import accord from '@/assets/images/accord.webp'
       image-alt="image d'une pognée de main"
     />
   </section>
-  <section class="px-5 py-10">
-    <div class="text-lg">
-      <h2 class="text-2xl font-semibold text-center pb-10">
+  <section class="px-5 py-10 md:mx-10 xl:px-44">
+    <div class="text-lg md:text-xl">
+      <h2 class="text-2xl font-semibold text-center pb-10 md:text-3xl">
         Optimisez votre budget avec le rachat de crédits
       </h2>
       <p class="pb-5">
@@ -23,7 +23,7 @@ import accord from '@/assets/images/accord.webp'
         En fonction de votre situation, je vous propose des solutions de financement adaptées à vos besoins.
         N'hésitez pas à me contacter pour plus d'informations.
       </p>
-      <p class="text-xl font-medium pb-5">
+      <p class="text-xl font-medium pb-2">
         En savoir plus :
       </p>
       <p>
@@ -34,15 +34,14 @@ import accord from '@/assets/images/accord.webp'
         download-name="liste-documents.pdf"
         button-text="Documents et pièces à fournir"
         action="preview"
-        class="mt-5"
+        class="pt-10"
       />
     </div>
   </section>
-  <section class="relative h-section">
-    <img src="@/assets/images/building.webp" alt="image de building" class="h-section object-cover shadow-xl">
-    <StepsCard class="absolute px-5 py-10 top-0 left-0 bg-opacity-40 bg-slate-900 w-screen h-section" />
+  <section>
+    <StepsCard />
   </section>
-  <section class="px-5 py-10">
+  <section class="py-10">
     <AgendaHome />
   </section>
 </template>

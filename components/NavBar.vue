@@ -63,7 +63,7 @@ onBeforeUnmount(() => {
     >
       <DropdownMenu @close-dropdown="closeMenuAndDropdown" @update:is-dropdown-open="isDropdownOpen = $event" />
       <li v-if="isDropdownOpen" class="h-[165px]" />
-      <li class="lg:pr-10 xl:pr-20">
+      <li class="lg:pr-10">
         <NuxtLink
           to="/assurance-emprunteur"
           :class="{ 'font-bold': route.path === '/assurance-emprunteur' }"
@@ -73,7 +73,7 @@ onBeforeUnmount(() => {
           Assurance emprunteur
         </NuxtLink>
       </li>
-      <li class="lg:pr-10 xl:pr-20">
+      <li class="lg:pr-10">
         <NuxtLink
           to="/a-propos"
           :class="{ 'font-bold': route.path === '/a-propos' }"
