@@ -8,8 +8,7 @@ import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
 
 <template>
   <section class="relative h-section mb-10">
-    <img src="../assets/images/hero-fake.webp" alt="" class="h-section w-screen object-cover shadow-xl">
-    <HeroCard class="absolute p-5 top-0 left-0 bg-gradient-to-t from-[#0f172a00] via-[#0f172a7b] to-[#0f172aa9] w-screen" />
+    <HeroCard />
   </section>
   <section class="px-5 py-10 bg-white">
     <CarouselBank />
