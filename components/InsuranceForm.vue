@@ -1,56 +1,56 @@
 <script setup lang="ts">
-import type { Message } from '@/types/Message'
-import { readAsBase64 } from '@/utils/fileUtils'
-import { reset } from '@formkit/core'
+import type { Message } from "@/types/Message";
+import { readAsBase64 } from "@/utils/fileUtils";
+import { reset } from "@formkit/core";
 
-const mail = useMail()
-const submitted = ref(false)
+const mail = useMail();
+const submitted = ref(false);
 const validationMessages = ref({
-  required: () => ('Ce champ est obligatoire'),
-  email: () => ('Veuillez saisir une adresse email valide'),
-  file: () => ('Seuls les fichiers PDF et les images PNG, JPG ou JPEG sont acceptés.'),
-})
+	required: () => "Ce champ est obligatoire",
+	email: () => "Veuillez saisir une adresse email valide",
+	file: () =>
+		"Seuls les fichiers PDF et les images PNG, JPG ou JPEG sont acceptés.",
+});
 const fullName = ref({
-  firstName: '',
-  lastName: '',
-})
+	firstName: "",
+	lastName: "",
+});
 
 async function sendMail(formData: Message) {
-  const { email, message, document } = formData
+	const { email, message, document } = formData;
 
-  try {
-    const attachments = []
+	try {
+		const attachments = [];
 
-    if (document && document.length > 0) {
-      for (const fileObj of document) {
-        if (fileObj.file) {
-          const file = fileObj.file
+		if (document && document.length > 0) {
+			for (const fileObj of document) {
+				if (fileObj.file) {
+					const file = fileObj.file;
 
-          const base64Content = await readAsBase64(file)
+					const base64Content = await readAsBase64(file);
 
-          attachments.push({
-            filename: file.name,
-            content: base64Content,
-            encoding: 'base64',
-          })
-        }
-      }
-    }
-    await mail.send({
-      from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
-      to: import.meta.env.VITE_MAIL_TO,
-      replyTo: email,
-      subject: `Demande de devis pour assurance emprunteur par ${fullName.value.firstName} ${fullName.value.lastName}`,
-      text: message || 'Pas de message fourni.',
-      attachments,
-    })
+					attachments.push({
+						filename: file.name,
+						content: base64Content,
+						encoding: "base64",
+					});
+				}
+			}
+		}
+		await mail.send({
+			from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
+			to: import.meta.env.VITE_MAIL_TO,
+			replyTo: email,
+			subject: `Demande de devis pour assurance emprunteur par ${fullName.value.firstName} ${fullName.value.lastName}`,
+			text: message || "Pas de message fourni.",
+			attachments,
+		});
 
-    submitted.value = true
-    reset('contact-form')
-  }
-  catch (error) {
-    console.error('Erreur lors de l\'envoi du message :', error)
-  }
+		submitted.value = true;
+		reset("contact-form");
+	} catch (error) {
+		console.error("Erreur lors de l'envoi du message :", error);
+	}
 }
 </script>
 

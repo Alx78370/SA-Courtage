@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import accord from '@/assets/images/accord.webp'
-import appartementImage from '@/assets/images/appartement.webp'
-import coupleContent from '@/assets/images/couple_content.webp'
-import rachatSoulte from '@/assets/images/rachatSoulte.webp'
-import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos.webp'
+import accord from "@/assets/images/accord.webp";
+import appartementImage from "@/assets/images/appartement.webp";
+import coupleContent from "@/assets/images/couple_content.webp";
+import rachatSoulte from "@/assets/images/rachatSoulte.webp";
+import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos.webp";
 </script>
 
 <template>

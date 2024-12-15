@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import mainSurClavier from '@/assets/images/mains-utilisant-un-clavier_banner.png'
+import mainSurClavier from "@/assets/images/mains-utilisant-un-clavier_banner.png";
 </script>
 
 <template>

@@ -1,35 +1,33 @@
 <script setup lang="ts">
-import type { Message } from '@/types/Message'
-import { reset } from '@formkit/core'
+import type { Message } from "@/types/Message";
+import { reset } from "@formkit/core";
 
-const mail = useMail()
-const submitted = ref(false)
+const mail = useMail();
+const submitted = ref(false);
 const validationMessages = ref({
-  required: () => ('Ce champ est obligatoire'),
-  email: () => ('Veuillez saisir une adresse email valide'),
-})
+	required: () => "Ce champ est obligatoire",
+	email: () => "Veuillez saisir une adresse email valide",
+});
 const fullName = ref({
-  firstName: '',
-  lastName: '',
-})
+	firstName: "",
+	lastName: "",
+});
 
 async function sendMail(formData: Message) {
-  const { email, message } = formData
-  try {
-    await mail.send({
-      from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
-      to: import.meta.env.VITE_MAIL_TO,
-      replyTo: email,
-      subject: `Demande de contact de ${fullName.value.firstName} ${fullName.value.lastName}`,
-      text: message,
-
-    })
-    submitted.value = true
-    reset('contact-form')
-  }
-  catch (error) {
-    console.error('Erreur lors de l\'envoi du message:', error)
-  }
+	const { email, message } = formData;
+	try {
+		await mail.send({
+			from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
+			to: import.meta.env.VITE_MAIL_TO,
+			replyTo: email,
+			subject: `Demande de contact de ${fullName.value.firstName} ${fullName.value.lastName}`,
+			text: message,
+		});
+		submitted.value = true;
+		reset("contact-form");
+	} catch (error) {
+		console.error("Erreur lors de l'envoi du message:", error);
+	}
 }
 </script>
 

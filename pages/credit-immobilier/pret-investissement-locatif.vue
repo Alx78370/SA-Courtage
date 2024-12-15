@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import appartementImage from '@/assets/images/appartement.webp'
+import appartementImage from "@/assets/images/appartement.webp";
 </script>
 
 <template>

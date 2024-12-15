@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import rachatSoulteBanner from '@/assets/images/rachatSoulte_banner.webp'
+import rachatSoulteBanner from "@/assets/images/rachatSoulte_banner.webp";
 </script>
 
 <template>

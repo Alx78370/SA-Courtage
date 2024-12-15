@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const options = {
-  url: 'https://calendly.com/s-a-courtage/30min',
-}
+	url: "https://calendly.com/s-a-courtage/30min",
+};
 </script>
 
 <template>

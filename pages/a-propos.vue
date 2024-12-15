@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import coupleEnRecherche from '@/assets/images/couple-en-recherche_banner.png'
-import fakeTrophée from '@/assets/images/fake-trophée.webp'
+import coupleEnRecherche from "@/assets/images/couple-en-recherche_banner.png";
+import fakeTrophée from "@/assets/images/fake-trophée.webp";
 </script>
 
 <template>

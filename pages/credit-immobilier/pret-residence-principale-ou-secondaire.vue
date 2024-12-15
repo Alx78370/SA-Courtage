@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import residencePrincipale from '@/assets/images/maison-principale.webp'
-import residenceSecondaire from '@/assets/images/maison-secondaire.webp'
-import maisonPrincipaleOuSecondaireImage from '@/assets/images/RP_de_dos_banner.webp'
+import residencePrincipale from "@/assets/images/maison-principale.webp";
+import residenceSecondaire from "@/assets/images/maison-secondaire.webp";
+import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos_banner.webp";
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import coupleContentBanner from '@/assets/images/couple_content_banner.webp'
+import coupleContentBanner from "@/assets/images/couple_content_banner.webp";
 </script>
 
 <template>

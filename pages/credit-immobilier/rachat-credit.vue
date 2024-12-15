@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import accord from '@/assets/images/accord_banner.webp'
+import accord from "@/assets/images/accord_banner.webp";
 </script>
 
 <template>

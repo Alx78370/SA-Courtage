@@ -1,19 +1,19 @@
 <script setup lang="ts">
 defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  imageSrc: {
-    type: String,
-    name: String,
-    required: true,
-  },
-  imageAlt: {
-    type: String,
-    required: true,
-  },
-})
+	title: {
+		type: String,
+		required: true,
+	},
+	imageSrc: {
+		type: String,
+		name: String,
+		required: true,
+	},
+	imageAlt: {
+		type: String,
+		required: true,
+	},
+});
 </script>
 
 <template>

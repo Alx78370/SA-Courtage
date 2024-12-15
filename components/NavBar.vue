@@ -1,30 +1,30 @@
 <script setup lang="ts">
-const isMenuOpen = ref(false)
-const isDropdownOpen = ref(false)
-const navRef = ref<HTMLElement | null>(null)
-const route = useRoute()
+const isMenuOpen = ref(false);
+const isDropdownOpen = ref(false);
+const navRef = ref<HTMLElement | null>(null);
+const route = useRoute();
 
 function toggleMenu() {
-  isMenuOpen.value = !isMenuOpen.value
+	isMenuOpen.value = !isMenuOpen.value;
 }
 
 function closeMenuAndDropdown() {
-  isMenuOpen.value = false
+	isMenuOpen.value = false;
 }
 
 function handleOutsideClick(event: MouseEvent) {
-  if (navRef.value && !navRef.value.contains(event.target as Node)) {
-    closeMenuAndDropdown()
-  }
+	if (navRef.value && !navRef.value.contains(event.target as Node)) {
+		closeMenuAndDropdown();
+	}
 }
 
 onMounted(() => {
-  document.addEventListener('click', handleOutsideClick)
-})
+	document.addEventListener("click", handleOutsideClick);
+});
 
 onBeforeUnmount(() => {
-  document.removeEventListener('click', handleOutsideClick)
-})
+	document.removeEventListener("click", handleOutsideClick);
+});
 </script>
 
 <template>

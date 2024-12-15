@@ -1,31 +1,28 @@
 {
-  "name": "nuxt-app",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "dependencies": {
-    "@formkit/nuxt": "^1.6.9",
-    "@nuxt/icon": "^1.8.2",
-    "@nuxtjs/tailwindcss": "^6.12.2",
-    "@primevue/themes": "^4.2.3",
-    "nuxt": "^3.14.1592",
-    "nuxt-calendly": "^0.1.21",
-    "nuxt-mail": "^5.1.1",
-    "primevue": "^4.2.3",
-    "vue": "latest",
-    "vue-router": "latest"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^3.9.2",
-    "@primevue/nuxt-module": "^4.2.3",
-    "eslint": "^9.15.0"
-  }
+	"name": "nuxt-app",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"@formkit/nuxt": "^1.6.9",
+		"@nuxt/icon": "^1.8.2",
+		"@nuxtjs/tailwindcss": "^6.12.2",
+		"@primevue/themes": "^4.2.3",
+		"nuxt": "^3.14.1592",
+		"nuxt-calendly": "^0.1.21",
+		"nuxt-mail": "^5.1.1",
+		"primevue": "^4.2.3",
+		"vue": "latest",
+		"vue-router": "latest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@primevue/nuxt-module": "^4.2.3"
+	}
 }
