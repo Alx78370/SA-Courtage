@@ -22,7 +22,7 @@ defineProps({
 <template>
   <article class="w-full bg-white shadow-xl rounded-xl">
     <img :src="image" :alt="alt" class="rounded-t-xl" />
-    <div class="p-5 lg:min-h-24">
+    <div class="p-5 lg:min-h-[340px] xl:min-h-[320px]">
       <h3 class="text-lg font-semibold text-center pb-2 md:text-xl border-b-2 border-gray-300">
         {{ title }}
       </h3>

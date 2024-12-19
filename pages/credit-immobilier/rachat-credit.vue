@@ -15,20 +15,20 @@ import accord from "@/assets/images/accord_banner.webp";
         <p class="pb-5">
           Le rachat de crédits est une solution financière qui vous permet de revoir les conditions de votre prêt immobilier, afin de profiter de taux plus intéressants.
         </p>
-        <p class="pb-5 font-semibold">
+        <p class="text-xl font-semibold pb-5 md:text-2xl">
           Quels sont les avantages du rachat de crédits ?
         </p>
         <ul class="list-disc list-inside pb-5">
           <li class="pb-2">
-            <span class="font-medium">Baisse des taux d’intérêt :</span>
+            <span class="font-semibold">Baisse des taux d’intérêt :</span>
             En renégociant votre crédit existant, vous profitez des taux d'intérêt actuels souvent plus bas, ce qui peut se traduire par des économies importantes sur le long terme.
           </li>
           <li class="pb-2">
-            <span class="font-medium">Réduction des mensualités :</span>
+            <span class="font-semibold">Réduction des mensualités :</span>
             Ajustez vos paiements mensuels pour qu'ils soient en phase avec votre budget actuel. Cela peut libérer des fonds pour d'autres projets ou dépenses du quotidien.
           </li>
           <li class="pb-2">
-            <span class="font-medium">Raccourcissement de la durée du prêt :</span>
+            <span class="font-semibold">Raccourcissement de la durée du prêt :</span>
             Si votre objectif est de rembourser plus rapidement votre prêt, le rachat de crédits vous permet de réduire la durée totale de votre engagement financier.
           </li>
         </ul>
@@ -37,7 +37,7 @@ import accord from "@/assets/images/accord_banner.webp";
           financement adaptées à vos besoins. N'hésitez pas à me contacter pour
           plus d'informations.
         </p>
-        <p class="text-xl font-medium pb-2">En savoir plus :</p>
+        <p class="text-xl font-semibold pb-2 md:text-2xl">En savoir plus :</p>
         <p>
           Pour prévisualiser les documents et pièces à fournir, cliquer sur le
           bouton ci-dessous.

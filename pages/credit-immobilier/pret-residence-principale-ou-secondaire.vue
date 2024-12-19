@@ -18,11 +18,11 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos_banner.
         <h2 class="text-2xl text-center font-semibold pb-10 md:text-3xl">
           Concrétisez votre projet immobilier avec sérénité
         </h2>
-        <p class="font-medium pb-2">Mon objectif :</p>
+        <p class="text-xl font-semibold pb-2 md:text-2xl">Mon objectif :</p>
         <p class="pb-5">
           Vous permettre, en fonction de votre profil et de votre situation, de financer votre achat immobilier dans les meilleures conditions possibles. Grâce à un accompagnement personnalisé, je vous aide à calculer votre enveloppe d'emprunt et à sécuriser chaque étape, de la recherche du bien jusqu'à la signature de l'acte authentique.
         </p>
-        <p class="font-medium pb-2">
+        <p class="text-xl font-semibold pb-2 md:text-2xl">
           Pourquoi faire appel à un courtier ?
         </p>
         <p class="pb-5">
@@ -42,7 +42,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos_banner.
             Simplifier vos démarches administratives pour vous faire gagner du temps et éviter le stress lié à la gestion des formalités.
           </li>
         </ul>
-        <p class="pb-5"><span class="font-medium">Le courtier :</span> un atout dans votre projet.</p>
+        <p class="pb-5"><span class="font-semibold">Le courtier :</span> un atout dans votre projet.</p>
         <p>
           Grâce à son expertise, il sécurise votre projet immobilier en vous offrant des solutions adaptées à vos besoins et à vos objectifs financiers.
         </p>
