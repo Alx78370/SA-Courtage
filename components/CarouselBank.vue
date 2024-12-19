@@ -85,7 +85,7 @@ const responsiveOptions = ref([
         <img
           :src="slotProps.data.itemImageSrc"
           :alt="slotProps.data.alt"
-          class="md:px-10 xl:px-20"
+          class="px-5 md:px-10 xl:px-20"
         />
       </template>
     </Carousel>

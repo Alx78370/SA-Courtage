@@ -4,7 +4,7 @@ const options = {
 };
 
 defineProps({
-  title: { type: String, default: "Discutons de votre projet ensemble !"} 
+  title: { type: String, default: "Discutons ensemble de votre projet !"} 
 });
 </script>
 
