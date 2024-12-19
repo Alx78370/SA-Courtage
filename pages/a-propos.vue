@@ -12,19 +12,19 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
         image-alt="image de Sylvie Allard"
       />
     </section>
-    <section class="px-5 py-10">
-      <article class="text-lg">
+    <section class="px-5 py-10 md:mx-10 xl:px-44">
+      <article class="text-lg md:text-xl">
         <p class="pb-5">
           Depuis 2018, j'ai accompagné des
-          <span class="font-bold">centaines de clients</span> dans leur
+          <span class="font-semibold">centaines de clients</span> dans leur
           recherche de financement et assurance emprunteur pour leur projet
           d'acquisition immobilière dans toute la France.
         </p>
-        <div class="flex flex-col w-44 h-52 float-left mr-5">
+        <div class="flex flex-col w-44 h-52 sm:w-56 sm:h-56 float-left mr-5 mt-2 mb-2">
           <img
             :src="fakeTrophée"
             alt="image de Sylvie Allard avec ses trophées"
-            class="rounded-3xl w-44 h-44 object-cover"
+            class="rounded-3xl w-44 h-44 object-cover md:w-56 md:h-56"
           />
           <p class="text-xs text-center">
             Meilleur courtier France chez Privilège Courtage en 2019 et 2020.
@@ -32,11 +32,11 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
         </div>
         <p class="pb-5">
           Avec une écoute attentive, mon but est de trouver la<span
-            class="font-bold"
+            class="font-semibold"
           >
             solution optimale </span
           >et personnalisée, avec
-          <span class="font-bold"
+          <span class="font-semibold"
             >une prise en charge globale du début à la fin du processus</span
           >. Rien ne sera laissé au hasard !
         </p>
@@ -47,7 +47,7 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
         </p>
         <p class="pb-5">
           Mon objectif premier : Vous proposer une
-          <span class="font-bold">offre unique</span>, à l'image de votre
+          <span class="font-semibold">offre unique</span>, à l'image de votre
           projet.
         </p>
         <p>
@@ -55,9 +55,10 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
         </p>
       </article>
     </section>
-    <section class="px-5 py-10 bg-white">
+    <section class="px-5 py-10 bg-white md:px-10 xl:px-44">
       <h2 class="text-2xl text-center font-semibold pb-10">Mes engagements</h2>
-      <ul class="flex flex-col justify-between">
+      <div class="flex justify-center">
+        <ul class="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
         <AdvantageItem
           icon="mdi:clock-fast"
           text="Délais rapides : gestion dans les 24/48h pour l’étude de la capacité d’emprunt."
@@ -77,6 +78,10 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
         />
         <AdvantageItem icon="ri:hand-heart-fill" text="Sérénité assurée." />
       </ul>
+      </div>
+    </section>
+    <section class="py-10">
+      <AgendaHome />
     </section>
   </div>
 </template>
