@@ -26,7 +26,7 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
             alt="image de Sylvie Allard avec ses trophées"
             class="rounded-3xl w-44 h-44 object-cover md:w-56 md:h-56"
           />
-          <p class="text-xs text-center">
+          <p class="text-xs sm:text-sm text-center">
             Meilleur courtier France chez Privilège Courtage en 2019 et 2020.
           </p>
         </div>
@@ -56,8 +56,8 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
       </article>
     </section>
     <section class="px-5 py-10 bg-white md:px-10 xl:px-44">
-      <h2 class="text-2xl text-center font-semibold pb-10">Mes engagements</h2>
-      <div class="flex justify-center">
+      <h2 class="text-center text-2xl md:text-3xl font-semibold px-5 pb-10">Mes engagements</h2>
+      <div class="flex justify-center py-10">
         <ul class="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
         <AdvantageItem
           icon="mdi:clock-fast"

@@ -32,9 +32,9 @@ async function sendMail(formData: Message) {
 </script>
 
 <template>
-  <div>
+  <div class="bg-white p-5 md:px-24 lg:px-44 xl:px-[25%]">
     <div class="border-b-2 border-slate-300 mb-3 pb-3">
-      <h3 class="text-2xl text-center font-semibold pb-3">Contactez-moi !</h3>
+      <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold px-5">Contactez-moi !</h2>
     </div>
     <FormKit
       id="contact-form"

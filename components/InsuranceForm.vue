@@ -55,7 +55,7 @@ async function sendMail(formData: Message) {
 </script>
 
 <template>
-  <div class="bg-white p-5 md:px-24 lg:px-44 xl:px-[30%]">
+  <div class="bg-white p-5 md:px-24 lg:px-44 xl:px-[25%]">
     <div class="border-b-2 mb-3 pb-3">
       <h3 class="pb-3 text-2xl font-semibold text-center mb-3">
         Demande de devis pour assurance emprunteur

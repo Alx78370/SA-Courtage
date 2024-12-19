@@ -11,12 +11,12 @@ import mainSurClavier from "@/assets/images/mains-utilisant-un-clavier_banner.pn
         image-alt="image de mains sur un clavier"
       />
     </section>
-    <section class="px-5 py-10">
+    <section class="px-5 py-10 md:px-10 xl:px-44">
       <div>
-        <h2 class="text-2xl font-medium pb-5">
+        <h2 class="text-center pb-10 text-2xl md:text-3xl font-semibold px-5">
           Vous avez un projet immobilier, des questions ?
         </h2>
-        <p class="text-lg">
+        <p class="text-lg md:text-xl pb-5">
           N’attendez plus, prenez un
           <span class="underline font-medium"
             ><a href="#agenda">rendez-vous téléphonique</a></span
@@ -27,33 +27,25 @@ import mainSurClavier from "@/assets/images/mains-utilisant-un-clavier_banner.pn
           >
           ci-dessous. Faisons de vos envies des réalités !
         </p>
-        <ul class="flex flex-col gap-5 pt-5">
-          <li class="border-2 shadow-md rounded-3xl p-2 bg-white">
-            <a
-              href="tel:+33612345678"
-              class="text-lg flex flex-col justify-center items-center"
-            >
-              <Icon name="mdi:phone" class="text-2xl" />
-              06 40 96 02 03
-            </a>
-          </li>
-          <li class="border-2 shadow-md rounded-3xl p-2 bg-white">
-            <a
-              href="mailto:s.a.courtage@gmail.com"
-              class="text-lg flex flex-col justify-center items-center"
-            >
-              <Icon name="mdi:email" class="text-2xl" />
-              s.a.courtage@gmail.com
-            </a>
-          </li>
+        <ul class="flex flex-col gap-5 pt-5 md:flex-row md:justify-around">
+          <ContactItem
+            href="tel:+33612345678"
+            icon="mdi:phone"
+            text="06 40 96 02 03"
+          />
+          <ContactItem
+            href="mailto:s.a.courtage@gmail.com"
+            icon="mdi:email"
+            text="s.a.courtage@gmail.com"
+          />
         </ul>
       </div>
     </section>
-    <section id="agenda" class="pb-10">
-      <AgendaHome />
-    </section>
     <section id="form" class="px-5 py-10 bg-white">
       <ContactForm />
+    </section>
+    <section id="agenda" class="py-10">
+      <AgendaHome />
     </section>
   </div>
 </template>
