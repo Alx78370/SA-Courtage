@@ -8,7 +8,9 @@
     <div
       class="absolute p-5 top-0 left-0 bg-gradient-to-t from-[#0f172a00] via-[#0f172a7b] to-[#0f172aa9] w-screen text-white pb-5 px-5 md:items-center flex flex-col"
     >
-      <h1 class="flex flex-col text-4xl font-medium pb-3 md:items-center lg:text-5xl sm:border-b-2">
+      <h1
+        class="flex flex-col text-4xl font-medium pb-3 md:items-center lg:text-5xl sm:border-b-2"
+      >
         Sylvie Allard
         <span class="text-lg font-normal lg:text-2xl pt-1">
           Courtier en prêt immobilier et assurance

@@ -1,22 +1,22 @@
 <script setup lang="ts">
 defineProps({
-	file: {
-		type: String,
-		required: true,
-	},
-	downloadName: {
-		type: String,
-		default: "",
-	},
-	buttonText: {
-		type: String,
-		default: "Télécharger le document",
-	},
-	action: {
-		type: String,
-		default: "download",
-		validator: (value: string) => ["download", "preview"].includes(value),
-	},
+  file: {
+    type: String,
+    required: true,
+  },
+  downloadName: {
+    type: String,
+    default: "",
+  },
+  buttonText: {
+    type: String,
+    default: "Télécharger le document",
+  },
+  action: {
+    type: String,
+    default: "download",
+    validator: (value: string) => ["download", "preview"].includes(value),
+  },
 });
 </script>
 

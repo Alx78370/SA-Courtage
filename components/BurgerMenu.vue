@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps({
-	isMenuOpen: Boolean,
+  isMenuOpen: Boolean,
 });
 
 const _emit = defineEmits(["toggleMenu"]);

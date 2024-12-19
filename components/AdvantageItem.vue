@@ -1,13 +1,13 @@
 <script setup lang="ts">
 defineProps({
-	icon: {
-		type: String,
-		required: true,
-	},
-	text: {
-		type: String,
-		required: true,
-	},
+  icon: {
+    type: String,
+    required: true,
+  },
+  text: {
+    type: String,
+    required: true,
+  },
 });
 </script>
 

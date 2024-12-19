@@ -4,12 +4,12 @@ import { rootClasses } from "./formkit.theme";
 import fileValidation from "./formkit-custom-rules/fileValidation";
 
 export default defaultConfig({
-	locales: { fr },
-	locale: "fr",
-	config: {
-		rootClasses,
-	},
-	rules: {
-		file: fileValidation,
-	},
+  locales: { fr },
+  locale: "fr",
+  config: {
+    rootClasses,
+  },
+  rules: {
+    file: fileValidation,
+  },
 });

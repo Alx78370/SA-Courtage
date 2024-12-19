@@ -5,38 +5,36 @@ import { reset } from "@formkit/core";
 const mail = useMail();
 const submitted = ref(false);
 const validationMessages = ref({
-	required: () => "Ce champ est obligatoire",
-	email: () => "Veuillez saisir une adresse email valide",
+  required: () => "Ce champ est obligatoire",
+  email: () => "Veuillez saisir une adresse email valide",
 });
 const fullName = ref({
-	firstName: "",
-	lastName: "",
+  firstName: "",
+  lastName: "",
 });
 
 async function sendMail(formData: Message) {
-	const { email, message } = formData;
-	try {
-		await mail.send({
-			from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
-			to: import.meta.env.VITE_MAIL_TO,
-			replyTo: email,
-			subject: `Demande de contact de ${fullName.value.firstName} ${fullName.value.lastName}`,
-			text: message,
-		});
-		submitted.value = true;
-		reset("contact-form");
-	} catch (error) {
-		console.error("Erreur lors de l'envoi du message:", error);
-	}
+  const { email, message } = formData;
+  try {
+    await mail.send({
+      from: `Formulaire de contact <${import.meta.env.VITE_MAIL_USER}>`,
+      to: import.meta.env.VITE_MAIL_TO,
+      replyTo: email,
+      subject: `Demande de contact de ${fullName.value.firstName} ${fullName.value.lastName}`,
+      text: message,
+    });
+    submitted.value = true;
+    reset("contact-form");
+  } catch (error) {
+    console.error("Erreur lors de l'envoi du message:", error);
+  }
 }
 </script>
 
 <template>
   <div>
     <div class="border-b-2 border-slate-300 mb-3 pb-3">
-      <h3 class="text-2xl text-center font-semibold pb-3">
-        Contactez-moi !
-      </h3>
+      <h3 class="text-2xl text-center font-semibold pb-3">Contactez-moi !</h3>
     </div>
     <FormKit
       id="contact-form"
@@ -46,9 +44,7 @@ async function sendMail(formData: Message) {
       class="space-y-4"
       @submit="sendMail"
     >
-      <FormKit
-        v-model="fullName" type="group"
-      >
+      <FormKit v-model="fullName" type="group">
         <div class="">
           <FormKit
             type="text"
@@ -69,7 +65,7 @@ async function sendMail(formData: Message) {
             :validation-messages="validationMessages"
           />
         </div>
-      </formkit>
+      </FormKit>
       <FormKit
         type="email"
         label="Email*"
@@ -91,7 +87,7 @@ async function sendMail(formData: Message) {
     </FormKit>
     <div v-if="submitted">
       <p class="text-md text-green-500">
-        {{ 'Votre message a bien été envoyé.' }}
+        {{ "Votre message a bien été envoyé." }}
       </p>
     </div>
   </div>
