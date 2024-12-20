@@ -47,7 +47,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos_banner.
           Grâce à son expertise, il sécurise votre projet immobilier en vous offrant des solutions adaptées à vos besoins et à vos objectifs financiers.
         </p>
       </article>
-      <ul class="flex flex-col gap-5 pt-10 lg:flex-row">
+      <ul class="flex flex-col gap-5 pt-10 md:flex-row">
         <li>
           <LoanOption
             :image="residencePrincipale"
