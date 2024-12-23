@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
 
-const emit = defineEmits(["closeDropdown"]);
+const isDropdownOpen = ref(false);
+const emit = defineEmits(["closeDropdown", "update:isDropdownOpen"]);
 const route = useRoute();
 
 function closeDropdown() {
+  isDropdownOpen.value = false;
+  emit("update:isDropdownOpen", isDropdownOpen.value);
   emit("closeDropdown");
 }
 </script>
