@@ -13,18 +13,18 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
       />
     </section>
     <section class="px-5 py-10 md:mx-10 xl:px-44">
-      <article class="text-lg md:text-xl">
+      <article class="text-lg md:text-xl lg:mb-10 xl:mb-20">
         <p class="pb-5">
           Depuis 2018, j'ai accompagné des
           <span class="font-semibold">centaines de clients</span> dans leur
           recherche de financement et assurance emprunteur pour leur projet
           d'acquisition immobilière dans toute la France.
         </p>
-        <div class="flex flex-col w-44 h-52 sm:w-56 sm:h-56 float-left mr-5 mt-2 mb-2">
+        <div class="flex flex-col w-44 h-52 md:w-96 md:h-96 float-left mr-5 mt-2 mb-2">
           <img
             :src="fakeTrophée"
             alt="image de Sylvie Allard avec ses trophées"
-            class="rounded-3xl w-44 h-44 object-cover md:w-56 md:h-56"
+            class="rounded-3xl w-44 h-44 object-cover md:w-96 md:h-96"
           />
           <p class="text-xs sm:text-sm text-center">
             Meilleur courtier France chez Privilège Courtage en 2019 et 2020.
