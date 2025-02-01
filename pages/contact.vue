@@ -7,8 +7,8 @@
         image-alt="image de mains sur un clavier"
       />
     </section>
-    <section class="px-5 py-10 md:px-10 xl:px-44">
-      <div>
+    <section class="lg:h-sectionlg xl:h-sectionxl flex flex-col justify-center items-center">
+      <div class="w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto py-20 px-5">
         <h2 class="text-center pb-10 text-2xl md:text-3xl font-semibold px-5">
           Vous avez un projet immobilier, des questions ?
         </h2>
@@ -37,10 +37,12 @@
         </ul>
       </div>
     </section>
-    <section id="form" class="px-5 py-10 bg-white">
-      <ContactForm />
+    <section id="form" class=" bg-white">
+      <div class="w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto px-5 py-20">
+        <ContactForm />
+      </div>
     </section>
-    <section id="agenda" class="py-10">
+    <section id="agenda" class="py-20">
       <AgendaHome />
     </section>
   </div>
