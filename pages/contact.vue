@@ -1,13 +1,9 @@
-<script setup lang="ts">
-import mainSurClavier from "@/assets/images/mains-utilisant-un-clavier_banner.webp";
-</script>
-
 <template>
   <div>
     <section>
       <AppBanner
         title="Contact"
-        :image-src="mainSurClavier"
+        image-src="/images/mains-utilisant-un-clavier_banner.webp"
         image-alt="image de mains sur un clavier"
       />
     </section>

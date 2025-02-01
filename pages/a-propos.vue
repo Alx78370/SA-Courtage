@@ -1,18 +1,13 @@
-<script setup lang="ts">
-import coupleEnRecherche from "@/assets/images/couple-en-recherche_banner.png";
-import fakeTrophée from "@/assets/images/fake-trophée.webp";
-</script>
-
 <template>
   <div>
     <section>
       <AppBanner
         title="À propos"
-        :image-src="coupleEnRecherche"
+        image-src="/images/couple-en-recherche_banner.webp"
         image-alt="image de Sylvie Allard"
       />
     </section>
-    <section class="px-5 py-10 md:mx-10 xl:px-44">
+    <section class="px-5 py-10 md:mx-10 xl:px-44 h-screen">
       <article class="text-lg md:text-xl lg:mb-10 xl:mb-20">
         <p class="pb-5">
           Depuis 2018, j'ai accompagné des
@@ -22,7 +17,7 @@ import fakeTrophée from "@/assets/images/fake-trophée.webp";
         </p>
         <div class="flex flex-col w-44 h-52 md:w-96 md:h-96 float-left mr-5 mt-2 mb-2">
           <img
-            :src="fakeTrophée"
+            src="/images/fake-trophée.webp"
             alt="image de Sylvie Allard avec ses trophées"
             class="rounded-3xl w-44 h-44 object-cover md:w-96 md:h-96"
           />

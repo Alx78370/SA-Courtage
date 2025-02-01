@@ -37,7 +37,7 @@ onBeforeUnmount(() => {
       @click="closeMenuAndDropdown"
     >
       <img
-        src="../assets/logo/Logo_capture_proche.png"
+        src="/Logo_capture_proche.webp"
         alt="Logo"
         class="w-24 h-14 object-cover"
       />

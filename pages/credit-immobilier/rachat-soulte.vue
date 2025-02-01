@@ -1,13 +1,9 @@
-<script setup lang="ts">
-import rachatSoulteBanner from "@/assets/images/rachatSoulte_banner.webp";
-</script>
-
 <template>
   <div>
     <section>
       <AppBanner
         title="Rachat de soulte"
-        :image-src="rachatSoulteBanner"
+        image-src="/images/rachatSoulte_banner.webp"
         image-alt="image d'un poignée de main"
       />
     </section>

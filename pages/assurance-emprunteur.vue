@@ -1,13 +1,9 @@
-<script setup lang="ts">
-import coupleContentBanner from "@/assets/images/couple_content_banner.webp";
-</script>
-
 <template>
   <div>
     <section>
       <AppBanner
         title="Assurance emprunteur"
-        :image-src="coupleContentBanner"
+        image-src="/images/couple_content_banner.webp"
         image-alt="image de couple content"
       />
     </section>

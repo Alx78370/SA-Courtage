@@ -1,52 +1,43 @@
 <script setup lang="ts">
-import banquePopulaireLogo from "@/assets/logo/banque-populaire-logo.svg";
-import bnpParibasLogo from "@/assets/logo/bnp-paribas-logo.svg";
-import caisseDepargneLogo from "@/assets/logo/caisse-d-epargne-logo.svg";
-import creditAgricoleLogo from "@/assets/logo/credit-agricole-logo.svg";
-import creditMutuelLogo from "@/assets/logo/credit-mutuel-logo.svg";
-import lclLogo from "@/assets/logo/lcl-logo-bleu-signature.svg";
-import laBanquePostaleLogo from "@/assets/logo/logo-la-banque-postale-1.svg";
-import societeGeneraleLogo from "@/assets/logo/societe-generale-logo.svg";
-
 const images = ref([
   {
-    itemImageSrc: societeGeneraleLogo,
-    thumbnailImageSrc: societeGeneraleLogo,
+    itemImageSrc: "/logo/societe-generale-logo.svg",
+    thumbnailImageSrc: "/logo/societe-generale-logo.svg",
     alt: "Logo Société Générale",
   },
   {
-    itemImageSrc: creditAgricoleLogo,
-    thumbnailImageSrc: creditAgricoleLogo,
+    itemImageSrc: "/logo/credit-agricole-logo.svg",
+    thumbnailImageSrc: "/logo/credit-agricole-logo.svg",
     alt: "Logo Crédit Agricole",
   },
   {
-    itemImageSrc: bnpParibasLogo,
-    thumbnailImageSrc: bnpParibasLogo,
+    itemImageSrc: "/logo/bnp-paribas-logo.svg",
+    thumbnailImageSrc: "/logo/bnp-paribas-logo.svg",
     alt: "Logo BNP Paribas",
   },
   {
-    itemImageSrc: caisseDepargneLogo,
-    thumbnailImageSrc: caisseDepargneLogo,
+    itemImageSrc: "/logo/caisse-d-epargne-logo.svg",
+    thumbnailImageSrc: "/logo/caisse-d-epargne-logo.svg",
     alt: "Logo Caisse d'Épargne",
   },
   {
-    itemImageSrc: creditMutuelLogo,
-    thumbnailImageSrc: creditMutuelLogo,
+    itemImageSrc: "/logo/credit-mutuel-logo.svg",
+    thumbnailImageSrc: "/logo/credit-mutuel-logo.svg",
     alt: "Logo Crédit Mutuel",
   },
   {
-    itemImageSrc: banquePopulaireLogo,
-    thumbnailImageSrc: banquePopulaireLogo,
+    itemImageSrc: "/logo/banque-populaire-logo.svg",
+    thumbnailImageSrc: "@/assets/logo/banque-populaire-logo.svg",
     alt: "Logo Banque Populaire",
   },
   {
-    itemImageSrc: lclLogo,
-    thumbnailImageSrc: lclLogo,
+    itemImageSrc: "/logo/credit-mutuel-logo.svg",
+    thumbnailImageSrc: "/logo/credit-mutuel-logo.svg",
     alt: "Logo LCL",
   },
   {
-    itemImageSrc: laBanquePostaleLogo,
-    thumbnailImageSrc: laBanquePostaleLogo,
+    itemImageSrc: "/logo/logo-la-banque-postale-1.svg",
+    thumbnailImageSrc: "/logo/logo-la-banque-postale-1.svg",
     alt: "Logo La Banque Postale",
   },
 ]);

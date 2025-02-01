@@ -20,7 +20,7 @@ defineProps({
 <template>
   <div class="relative h-section w-full">
     <img
-      src="@/assets/images/building.webp"
+      src="/images/building.webp"
       alt="image de building"
       class="absolute inset-0 object-cover w-full h-full shadow-xl"
     />

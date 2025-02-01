@@ -1,11 +1,3 @@
-<script setup lang="ts">
-import accord from "@/assets/images/accord.webp";
-import appartementImage from "@/assets/images/appartement.webp";
-import coupleContent from "@/assets/images/couple_content.webp";
-import rachatSoulte from "@/assets/images/rachatSoulte.webp";
-import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos.webp";
-</script>
-
 <template>
   <div>
     <section class="relative h-section mb-10">
@@ -24,7 +16,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos.webp";
       >
         <ServiceCard
           title="Prêt pour résidence principale ou secondaire"
-          :image-src="maisonPrincipaleOuSecondaireImage"
+          image-src="/images/RP_de_dos.webp"
           image-alt="image de couple recevant la clé de leur maison"
           link="/credit-immobilier/pret-residence-principale-ou-secondaire"
           details="Un accompagnement personnalisé pour un prêt sur mesure 100% adapté à votre projet."
@@ -32,7 +24,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos.webp";
         />
         <ServiceCard
           title="Prêt pour investissement locatif"
-          :image-src="appartementImage"
+          image-src="/images/appartement.webp"
           image-alt="image d'appartement"
           link="/credit-immobilier/pret-investissement-locatif"
           details="Des conditions de financement négociées pour optimiser votre investissement."
@@ -40,7 +32,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos.webp";
         />
         <ServiceCard
           title="Rachat de soulte"
-          :image-src="rachatSoulte"
+          image-src="/images/rachatSoulte.webp"
           image-alt="image d'une pognée de main"
           link="/credit-immobilier/rachat-soulte"
           details="Les meilleures solutions pour devenir propriétaire à part entière."
@@ -48,7 +40,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos.webp";
         />
         <ServiceCard
           title="Rachat de crédit"
-          :image-src="accord"
+          image-src="/images/accord.webp"
           image-alt="image d'une pognée de main"
           link="/credit-immobilier/rachat-credit"
           details="Vérifions ensemble la pertinence d’un rachat de crédit."
@@ -56,7 +48,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos.webp";
         />
         <ServiceCard
           title="Assurance emprunteur"
-          :image-src="coupleContent"
+          image-src="/images/couple_content.webp"
           image-alt="image de couple content"
           link="/assurance-emprunteur"
           details="Des offres d’assurance emprunteur pour une couverture adaptée à votre profil."
@@ -64,7 +56,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos.webp";
       </div>
     </section>
 
-    <section class="pb-10">
+    <section class="pb-10"> 
       <AgendaHome />
     </section>
   </div>

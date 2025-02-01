@@ -1,15 +1,9 @@
-<script setup lang="ts">
-import residencePrincipale from "@/assets/images/maison-principale.webp";
-import residenceSecondaire from "@/assets/images/maison-secondaire.webp";
-import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos_banner.webp";
-</script>
-
 <template>
   <div>
     <section>
       <AppBanner
         title="Prêt pour résidence principale ou secondaire"
-        :image-src="maisonPrincipaleOuSecondaireImage"
+        image-src="/images/RP_de_dos_banner.webp"
         image-alt="image de couple recevant la clé de leur maison"
       />
     </section>
@@ -50,7 +44,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos_banner.
       <ul class="flex flex-col gap-5 pt-10 md:flex-row">
         <li>
           <LoanOption
-            :image="residencePrincipale"
+            image="/images/maison-principale.webp"
             alt="Résidence principale"
             title="Prêt immobilier pour l'acquisition de votre Résidence Principale."
             description="Que vous souhaitiez acheter un bien ancien ou un logement neuf en VEFA (Vente en l’État Futur d’Achèvement), je vous accompagne pour concrétiser ce projet essentiel. Votre résidence principale est bien souvent le cœur de votre patrimoine, et il est primordial de le financer dans des conditions optimales."
@@ -58,7 +52,7 @@ import maisonPrincipaleOuSecondaireImage from "@/assets/images/RP_de_dos_banner.
         </li>
         <li>
           <LoanOption
-            :image="residenceSecondaire"
+            image="/images/maison-secondaire.webp"
             alt="Résidence secondaire"
             title="Prêt immobilier pour l'acquisition de votre Résidence Secondaire."
             description="Vous rêvez d’une maison de vacances ou d’un pied-à-terre pour vos escapades ? Je vous aide à financer votre résidence secondaire en tenant compte de votre capacité d’endettement et de vos projets à long terme. Ce type d’investissement peut également être envisagé dans une optique patrimoniale."

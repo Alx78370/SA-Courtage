@@ -1,11 +1,7 @@
-<script setup lang="ts">
-import accord from "@/assets/images/accord_banner.webp";
-</script>
-
 <template>
   <div>
     <section>
-      <AppBanner title="Rachat de crédits" :image-src="accord" image-alt="image d'une pognée de main" />
+      <AppBanner title="Rachat de crédits" image-src="/images/accord_banner.webp" image-alt="image d'une pognée de main" />
     </section>
     <section class="px-5 py-10 md:mx-10 xl:px-44">
       <div class="text-lg md:text-xl">

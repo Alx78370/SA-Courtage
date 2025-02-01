@@ -1,13 +1,9 @@
-<script setup lang="ts">
-import appartementImage from "@/assets/images/appartement.webp";
-</script>
-
 <template>
   <div>
     <section>
       <AppBanner
         title="Prêt pour investissement locatif"
-        :image-src="appartementImage"
+        image-src="/images/appartement.webp"
         image-alt="image d'appartement"
       />
     </section>

@@ -1,7 +1,7 @@
 <template>
   <div class="relative h-section w-screen">
     <img
-      src="../assets/images/hero-fake.webp"
+      src="/images/hero-fake.webp"
       alt="Image hero"
       class="absolute top-0 left-0 h-section w-full object-cover shadow-xl"
     />
