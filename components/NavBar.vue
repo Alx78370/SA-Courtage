@@ -39,7 +39,7 @@ onBeforeUnmount(() => {
       <img
         src="/Logo_capture_proche.webp"
         alt="Logo"
-        class="w-24 h-14 object-cover"
+        class="w-24 h-14 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
       />
     </NuxtLink>
     <div>
