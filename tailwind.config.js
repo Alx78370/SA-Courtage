@@ -8,6 +8,8 @@ export default {
       },
       height: {
         section: "calc(100vh - 88px)",
+        sectionlg: "calc(100vh - 319px)",
+        sectionxl: "calc(100vh - 366px)",
       },
     },
   },
