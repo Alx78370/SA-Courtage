@@ -3,17 +3,17 @@
     <section>
       <AppBanner title="Rachat de crédits" image-src="/images/accord_banner.webp" image-alt="image d'une pognée de main" />
     </section>
-    <section class="px-5 py-10 md:mx-10 xl:px-44">
-      <div class="text-lg md:text-xl">
-        <h2 class="text-2xl font-semibold text-center pb-10 md:text-3xl">
+    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+      <div class="">
+        <h2 class="text-xl font-semibold text-center pb-10">
           Optimisez votre budget avec le rachat de crédits
         </h2>
         <p class="pb-5">
           Le rachat de crédits est une solution financière qui vous permet de revoir les conditions de votre prêt immobilier, afin de profiter de taux plus intéressants.
         </p>
-        <p class="text-xl font-semibold pb-5 md:text-2xl">
+        <h3 class="text-lg font-semibold pb-5">
           Quels sont les avantages du rachat de crédits ?
-        </p>
+        </h3>
         <ul class="list-disc list-inside pb-5">
           <li class="pb-2">
             <span class="font-semibold">Baisse des taux d’intérêt :</span>
@@ -33,7 +33,7 @@
           financement adaptées à vos besoins. N'hésitez pas à me contacter pour
           plus d'informations.
         </p>
-        <p class="text-xl font-semibold pb-2 md:text-2xl">En savoir plus :</p>
+        <p class="text-lg font-semibold pb-2">En savoir plus :</p>
         <p>
           Pour prévisualiser les documents et pièces à fournir, cliquer sur le
           bouton ci-dessous.

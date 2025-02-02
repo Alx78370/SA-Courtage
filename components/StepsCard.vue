@@ -28,12 +28,12 @@ defineProps({
       class="absolute inset-0 bg-opacity-60 bg-slate-900 px-5 py-10 flex items-center justify-center"
     >
       <div class="text-white">
-        <h3 class="text-2xl font-semibold pb-5 md:text-3xl">
+        <h3 class="text-xl font-semibold pb-5">
           Les étapes de mon accompagnement :
         </h3>
         <hr class="pb-5" />
         <ul
-          class="list list-disc list-inside text-lg lg:text-xl flex flex-col gap-5"
+          class="list list-disc list-inside flex flex-col gap-5"
         >
           <li v-for="(item, index) in listItems" :key="index">
             {{ item }}
