@@ -65,16 +65,16 @@
             <ul class="grid gap-5 md:gap-32 grid-cols-2 lg:grid-cols-3">
               <AdvantageItem
                 icon="mdi:clock-fast"
-                text="Délais rapides : gestion dans les 24/48h pour l’étude de la capacité d’emprunt."
+                text="Délais rapides : gestion dans les 24/48h."
               />
               <AdvantageItem icon="mdi:speak" text="Réponse claire, transparence." />
               <AdvantageItem
                 icon="mdi:bank"
-                text="Recherche de la meilleure offre grâce à mes partenaires bancaires sur toute la France."
+                text="Des partenaires bancaires sur toute la France."
               />
               <AdvantageItem
                 icon="mdi:handshake"
-                text="Accompagnement à chaque étape du processus."
+                text="Accompagnement sur mesure."
               />
               <AdvantageItem
                 icon="vaadin:piggy-bank-coin"
