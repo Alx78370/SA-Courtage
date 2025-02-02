@@ -8,16 +8,16 @@
       />
     </section>
     <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
-      <div class="text-lg md:text-xl">
-        <h2 class="text-2xl font-semibold text-center pb-10 md:text-3xl">
+      <div>
+        <h2 class="text-xl font-semibold text-center pb-10">
           Boostez votre patrimoine avec un investissement locatif clé en main !
         </h2>
         <p class="pb-5">
           Vous souhaitez faire fructifier votre patrimoine tout en bénéficiant d’un revenu complémentaire ? L’investissement locatif est une solution stratégique pour optimiser vos finances, préparer votre retraite ou transmettre un héritage. En collaboration avec des partenaires spécialisés en gestion de patrimoine et en placements financiers adaptés à tout profil, je vous accompagne pour bâtir un projet solide et sur-mesure.
         </p>
-        <p class="text-xl font-semibold pb-2 md:text-2xl">
+        <h3 class="text-lg font-semibold pb-2">
           Pourquoi opter pour un prêt d’investissement locatif ?
-        </p>
+        </h3>
         <ul class="flex flex-col list-disc list-inside pb-5 gap-2">
           <li>
             <span class="font-semibold">Développer votre patrimoine :</span>
@@ -39,7 +39,7 @@
         <p class="pb-5">
           Mon expertise et mon réseau de partenaires vous garantissent un accompagnement personnalisé pour concrétiser votre projet d’investissement locatif en toute sérénité.
         </p>
-        <p class="text-xl font-semibold pb-2 md:text-2xl">En savoir plus :</p>
+        <h3 class="text-lg font-semibold pb-2">En savoir plus :</h3>
         <p>
           Pour prévisualiser les documents et pièces à fournir, cliquer sur le
           bouton ci-dessous.

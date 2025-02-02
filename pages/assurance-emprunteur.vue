@@ -7,12 +7,12 @@
         image-alt="image de couple content"
       />
     </section>
-    <section class="px-5 py-10 md:mx-10 xl:px-44">
-      <div class="text-lg rounded-3xl md:text-xl">
+    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+      <div>
         <h2 class="text-2xl text-center font-semibold pb-10 md:text-3xl">
           Nouvelle assurance ou changement d'assurance de prêt ?
         </h2>
-        <p class="text-xl font-semibold pb-5 md:text-2xl">Que garantit l’assurance emprunteur ?</p>
+        <h3 class="text-lg font-semibold pb-5">Que garantit l’assurance emprunteur ?</h3>
         <p class="pb-5">
           L’assurance emprunteur est une assurance qui garantit la prise en
           charge de tout ou partie des échéances de remboursement ou du capital
@@ -51,10 +51,10 @@
         />
       </div>
     </section>
-    <section class="py-10">
+    <section class="py-20 bg-white w-screen">
       <InsuranceForm />
     </section>
-    <section class="py-10">
+    <section class="py-20">
       <AgendaHome />
     </section>
   </div>

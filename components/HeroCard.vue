@@ -17,7 +17,7 @@
         <h2 class="text-lg text-center lg:text-xl pt-1 font-semibold pb-3 border-b-2 border-gray-800">
           Courtier en prêt immobilier et assurance
         </h2>
-        <div class="flex flex-col items-start md:text-2xl pt-3">
+        <div class="flex flex-col items-start pt-3">
           <div class="flex flex-col mx-auto">
             <div class="flex items-center gap-3">
               <Icon name="system-uicons:location" />
@@ -35,13 +35,13 @@
           <div class="flex justify-center gap-5">
             <NuxtLink
               to="/contact"
-              class="flex justify-center items-center bg-blue-600 font-semibold p-3 md:p-5 rounded-2xl  min-w-32 md:text-xl transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700 text-white"
+              class="flex justify-center items-center bg-blue-600 font-semibold p-3 rounded-2xl  min-w-32 md:text-xl transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700 text-white"
             >
               Contactez-moi
             </NuxtLink>
             <NuxtLink
               to="/a-propos"
-              class="flex justify-center items-center bg-slate-100 text-gray-800 border-2 font-semibold p-3 md:p-5 rounded-2xl min-w-32 md:text-xl transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-slate-200"
+              class="flex justify-center items-center bg-slate-100 text-gray-800 border-2 font-semibold p-3 rounded-2xl min-w-32 md:text-xl transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-slate-200"
             >
               En savoir plus
             </NuxtLink>

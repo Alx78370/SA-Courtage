@@ -7,18 +7,18 @@
         image-alt="image de couple recevant la clé de leur maison"
       />
     </section>
-    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto text-lg md:text-xl">
+    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
       <article>
         <h2 class="text-2xl text-center font-semibold pb-10 md:text-3xl">
           Concrétisez votre projet immobilier avec sérénité
         </h2>
-        <p class="text-xl font-semibold pb-2 md:text-2xl">Mon objectif :</p>
+        <h3 class="text-lg font-semibold pb-2">Mon objectif :</h3>
         <p class="pb-5">
           Vous permettre, en fonction de votre profil et de votre situation, de financer votre achat immobilier dans les meilleures conditions possibles. Grâce à un accompagnement personnalisé, je vous aide à calculer votre enveloppe d'emprunt et à sécuriser chaque étape, de la recherche du bien jusqu'à la signature de l'acte authentique.
         </p>
-        <p class="text-xl font-semibold pb-2 md:text-2xl">
+        <h3 class="text-lg font-semibold pb-2 ">
           Pourquoi faire appel à un courtier ?
-        </p>
+        </h3>
         <p class="pb-5">
           Un courtier est bien plus qu’un simple intermédiaire. C’est un partenaire stratégique qui vous accompagne pour :
         </p>
@@ -60,7 +60,7 @@
         </li>
       </ul>
       <article>
-        <p class="font-medium pt-10 pb-2">En savoir plus :</p>
+        <p class="text-lg font-medium pt-10 pb-2">En savoir plus :</p>
         <p>
           Pour prévisualiser les documents et pièces à fournir, cliquer sur le
           bouton ci-dessous.

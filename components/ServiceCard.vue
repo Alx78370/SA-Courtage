@@ -39,11 +39,11 @@ defineProps({
           class="p-2 absolute inset-0 flex flex-col items-center justify-center"
         >
           <h3
-            class="text-white text-center text-3xl z-20 border-b-2 pb-4 w-full md:text-4xl"
+            class="text-white text-center font-semibold text-3xl z-20 border-b-2 pb-4 w-full"
           >
             {{ title }}
           </h3>
-          <p class="text-white text-center text-lg z-20 pt-2 md:text-xl">
+          <p class="text-white text-center z-20 pt-2">
             {{ details }}
           </p>
         </div>
