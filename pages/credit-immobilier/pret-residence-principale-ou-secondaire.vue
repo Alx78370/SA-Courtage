@@ -7,7 +7,7 @@
         image-alt="image de couple recevant la clé de leur maison"
       />
     </section>
-    <section class="px-5 py-10 md:mx-10 xl:px-44 text-lg md:text-xl">
+    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto text-lg md:text-xl">
       <article>
         <h2 class="text-2xl text-center font-semibold pb-10 md:text-3xl">
           Concrétisez votre projet immobilier avec sérénité
@@ -77,7 +77,7 @@
     <section>
       <StepsCard />
     </section>
-    <section class="py-10">
+    <section class="py-20">
       <AgendaHome />
     </section>
   </div>
