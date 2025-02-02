@@ -62,7 +62,8 @@ const responsiveOptions = ref([
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col gap-20 ">
+    <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold px-5">Un réseau bancaire national avec un accès privilégié</h2>
     <Carousel
       :value="images"
       :num-visible="4"

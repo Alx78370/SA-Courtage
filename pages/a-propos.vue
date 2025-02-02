@@ -7,7 +7,7 @@
         image-alt="image de Sylvie Allard"
       />
     </section>
-    <section class="px-5 py-10 lg:h-sectionlg xl:h-sectionxl flex justify-center items-center w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+    <section class="px-5 py-10 flex justify-center items-center w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
       <article class="text-lg md:text-xl ">
         <div>
           <div class="flex flex-col w-44 h-52 md:w-96 md:h-96 float-left mr-5 mt-2 mb-2">

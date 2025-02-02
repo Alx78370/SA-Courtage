@@ -1,13 +1,12 @@
 <template>
   <div>
-    <section class="relative h-section mb-10">
+    <section class="relative h-section mb-20">
       <HeroCard />
     </section>
-    <section class="py-10">
-      <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold px-5">Un réseau bancaire national avec un accès privilégié</h2>
+    <section class="py-20 ">
       <CarouselBank class="bg-white py-10 md:py-20" />
     </section>
-    <section class="px-5 py-10">
+    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
       <h2 class=" text-center pb-5 text-2xl md:text-3xl font-semibold px-5">
         Retrouvez mes différentes prestations
       </h2>
@@ -56,7 +55,7 @@
       </div>
     </section>
 
-    <section class="pb-10"> 
+    <section class="py-20"> 
       <AgendaHome />
     </section>
   </div>
