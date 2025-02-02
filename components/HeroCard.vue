@@ -3,10 +3,10 @@
     <img
       src="/images/SA_hero_cover.webp"
       alt="Image hero"
-      class="absolute top-0 left-0 h-section w-full object-[-400px] sm:object-center object-cover shadow-xl"
+      class="absolute top-0 left-0 h-section w-full object-cover"
     />
     <div
-      class="absolute p-5 xl:top-20 xl:right-64 bg-gradient-to-t  w-screen text-white items-end flex flex-col"
+      class="absolute p-5 bg-gradient-to-t  w-screen text-white items-end flex flex-col"
     >
       <div class="flex flex-col items-center text-gray-800 bg-[#f1f5f9bd] rounded-2xl p-5 md:p-10">
         <h1
@@ -41,7 +41,7 @@
             </NuxtLink>
             <NuxtLink
               to="/a-propos"
-              class="flex justify-center items-center bg-slate-100 text-gray-800 font-semibold p-3 md:p-5 rounded-2xl min-w-32 text-xl transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-slate-200"
+              class="flex justify-center items-center bg-slate-100 text-gray-800 border-2 font-semibold p-3 md:p-5 rounded-2xl min-w-32 text-xl transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-slate-200"
             >
               En savoir plus
             </NuxtLink>
