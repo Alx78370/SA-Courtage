@@ -6,7 +6,7 @@
       class="absolute top-0 left-0 h-section w-full object-cover"
     />
     <div
-      class="absolute p-5 md:pr-10 bg-gradient-to-t  w-screen text-white items-end flex flex-col"
+      class="absolute p-2 md:p-5 md:pr-10 bg-gradient-to-t  w-screen text-white items-end flex flex-col"
     >
       <div class="flex flex-col items-center text-gray-800 bg-[#f1f5f9bd] rounded-2xl p-5 md:p-10">
         <h1
