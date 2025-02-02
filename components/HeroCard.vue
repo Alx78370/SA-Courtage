@@ -3,7 +3,7 @@
     <img
       src="/images/SA_hero_cover.webp"
       alt="Image hero"
-      class="absolute top-0 left-0 h-section w-full object-cover"
+      class="absolute top-0 left-0 h-section w-full object-[-10px] md:object-center object-cover"
     />
     <div
       class="absolute p-5 md:pr-10 bg-gradient-to-t  w-screen text-white items-end flex flex-col"
