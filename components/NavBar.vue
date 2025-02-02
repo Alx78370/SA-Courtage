@@ -29,7 +29,7 @@ onBeforeUnmount(() => {
 <template>
   <nav
     ref="menuRef"
-    class="fixed z-50 h-20 bg-slate-100 w-screen flex items-center justify-between p-4 lg:py-4 lg:px-10 text-lg lg:text-xl"
+    class="fixed z-50 h-20 bg-[#f1f5f9e4] w-screen flex items-center justify-between p-4 lg:py-4 lg:px-10 text-lg lg:text-xl"
   >
     <NuxtLink
       to="/"
@@ -48,7 +48,7 @@ onBeforeUnmount(() => {
     <ul
       
       :class="{ 'hidden': !isMenuOpen, 'block': isMenuOpen, }"
-      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-slate-100 md:bg-transparent w-full md:w-auto shadow-lg md:shadow-none z-50"
+      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-[#f1f5f9e4] md:bg-transparent w-full md:w-auto shadow-lg md:shadow-none z-50"
     >
     <li
         class="relative lg:pr-10 group"

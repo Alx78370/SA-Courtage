@@ -12,7 +12,7 @@
         <div>
           <div class="flex flex-col w-44 h-52 md:w-96 md:h-96 float-left mr-5 mt-2 mb-2">
             <img
-              src="/images/fake-trophée.webp"
+              src="/images/SA_trophee.webp"
               alt="image de Sylvie Allard avec ses trophées"
               class="rounded-3xl w-44 h-44 object-cover md:w-96 md:h-96"
             />

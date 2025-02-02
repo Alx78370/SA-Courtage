@@ -35,8 +35,10 @@ async function sendMail(formData: Message) {
     <div class="border-b-2 border-slate-300 mb-3 pb-3">
       <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold px-5">Contactez-moi !</h2>
     </div>
-    <div class="w-full flex flex-col justify-center items-center md:flex-row md:justify-between gap-10">
-      <img src="/images/SA_au_bureau.webp" alt="" class="hidden md:block md:w-1/2 h-full object-cover">
+    <div class="w-full h-[465px] flex flex-col justify-center items-center md:flex-row md:justify-between gap-10">
+      <div class="hidden md:block md:w-1/2 h-full">
+        <img src="/images/SA_contact.webp" alt="" class="h-full w-full object-cover rounded-2xl">
+      </div>
       <div class="w-1/2">
         <FormKit
           id="contact-form"

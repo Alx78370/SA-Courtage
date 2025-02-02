@@ -14,7 +14,7 @@ function closeDropdown() {
 
 <template>
   <ul
-    class="absolute w-full md:top-[62px] bg-slate-100 rounded-b-lg md:w-[350px] lg:w-[400px] px-4 md:pb-4 z-50 md:shadow-lg"
+    class="absolute w-full md:top-[62px] bg-[#f1f5f9e4] rounded-b-lg md:w-[350px] lg:w-[400px] px-4 md:pb-4 z-50 md:shadow-lg"
   >
     <li>
       <NuxtLink
@@ -24,7 +24,7 @@ function closeDropdown() {
             route.path ===
             '/credit-immobilier/pret-residence-principale-ou-secondaire',
         }"
-        class="list-item py-2 hover:bg-slate-200"
+        class="list-item py-2 hover:bg-[#d6d9dde4]"
         @click="closeDropdown"
       >
         <div class="flex items-center gap-2">
@@ -40,7 +40,7 @@ function closeDropdown() {
           'font-bold':
             route.path === '/credit-immobilier/pret-investissement-locatif',
         }"
-        class="list-item py-2 hover:bg-slate-200"
+        class="list-item py-2 hover:bg-[#d6d9dde4]"
         @click="closeDropdown"
       >
         <div class="flex items-center gap-2">
@@ -55,7 +55,7 @@ function closeDropdown() {
         :class="{
           'font-bold': route.path === '/credit-immobilier/rachat-soulte',
         }"
-        class="list-item py-2 hover:bg-slate-200"
+        class="list-item py-2 hover:bg-[#d6d9dde4]"
         @click="closeDropdown"
       >
         <div class="flex items-center gap-2">
@@ -69,7 +69,7 @@ function closeDropdown() {
         :class="{
           'font-bold': route.path === '/credit-immobilier/rachat-credit',
         }"
-        class="list-item pt-2 pb-3 border-b-2 md:border-b-0 hover:bg-slate-200"
+        class="list-item pt-2 pb-3 border-b-2 md:border-b-0 hover:bg-[#d6d9dde4]"
         @click="closeDropdown"
       >
         <div class="flex items-center gap-2">
