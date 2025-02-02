@@ -12,9 +12,9 @@ defineProps({
 </script>
 
 <template>
-  <li class="flex flex-col items-center justify-start h-full">
-    <Icon :name="icon" class="text-7xl text-slate-400" />
-    <p class="text-xl text-center max-w-72">
+  <li class="flex flex-col items-center justify-start">
+    <Icon :name="icon" class="text-5xl md:text-7xl text-slate-400" />
+    <p class="text-center w-full">
       {{ text }}
     </p>
   </li>
