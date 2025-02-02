@@ -82,7 +82,7 @@ async function sendMail(formData: Message) {
           accept=".pdf,.png,.jpg,.jpeg" validation="required|file" validation-visibility="dirty"
           :validation-messages="validationMessages" />
       </FormKit>
-      <div class="hidden md:block md:w-1/2 h-full">
+      <div class="hidden md:block md:w-[70%] h-full">
         <img src="/images/maison-cle-en-main.webp" alt="maison clé en main"
           class="h-full w-full object-cover rounded-2xl" />
       </div>
