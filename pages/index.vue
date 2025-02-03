@@ -16,39 +16,31 @@
         <ServiceCard
           title="Prêt pour résidence principale ou secondaire"
           image-src="/images/RP_de_dos.webp"
-          image-alt="image de couple recevant la clé de leur maison"
           link="/credit-immobilier/pret-residence-principale-ou-secondaire"
           details="Un accompagnement personnalisé pour un prêt sur mesure 100% adapté à votre projet."
-          class="pb-5 lg:col-span-2"
+          class="lg:col-span-2"
         />
         <ServiceCard
           title="Prêt pour investissement locatif"
           image-src="/images/appartement.webp"
-          image-alt="image d'appartement"
           link="/credit-immobilier/pret-investissement-locatif"
           details="Des conditions de financement négociées pour optimiser votre investissement."
-          class="pb-5"
         />
         <ServiceCard
           title="Rachat de soulte"
           image-src="/images/rachatSoulte.webp"
-          image-alt="image d'une pognée de main"
           link="/credit-immobilier/rachat-soulte"
           details="Les meilleures solutions pour devenir propriétaire à part entière."
-          class="pb-5"
         />
         <ServiceCard
           title="Rachat de crédit"
           image-src="/images/accord.webp"
-          image-alt="image d'une pognée de main"
           link="/credit-immobilier/rachat-credit"
           details="Vérifions ensemble la pertinence d’un rachat de crédit."
-          class="pb-5"
         />
         <ServiceCard
           title="Assurance emprunteur"
           image-src="/images/couple_content.webp"
-          image-alt="image de couple content"
           link="/assurance-emprunteur"
           details="Des offres d’assurance emprunteur pour une couverture adaptée à votre profil."
         />

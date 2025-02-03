@@ -2,7 +2,6 @@
 const route = useRoute();
 const isMenuOpen = ref(false);
 const isDropdownOpen = ref(false);
-const menuRef = ref<HTMLElement | null>(null);
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
@@ -11,26 +10,17 @@ function toggleMenu() {
 function closeMenuAndDropdown() {
 	isMenuOpen.value = false;
 }
-
-function handleClickOutside(event: MouseEvent) {
-  if (menuRef.value && !menuRef.value.contains(event.target as Node)) {
-    closeMenuAndDropdown();
-  }
-}
-
-onMounted(() => {
-  document.addEventListener('click', handleClickOutside);
-});
-onBeforeUnmount(() => {
-  document.removeEventListener('click', handleClickOutside);
-});
 </script>
 
 <template>
   <nav
-    ref="menuRef"
-    class="fixed z-50 h-20 bg-[#f1f5f9f6] w-screen flex items-center justify-between p-4 lg:py-4 lg:px-10 text-lg lg:text-xl"
+    class="fixed z-50 h-20 bg-slate-100 w-screen flex items-center justify-between p-4 lg:py-4 lg:px-10 text-lg lg:text-xl"
   >
+      <a
+        href="#mainContent"
+        class="sr-only focus-visible:not-sr-only focus-visible:absolute focus-visible:top-0 focus-visible:left-1/2 focus-visible:text-black p-2">
+        Aller au contenu principal
+      </a>
     <NuxtLink
       to="/"
       class="text-2xl font-bold text-gray-800"
@@ -38,7 +28,7 @@ onBeforeUnmount(() => {
     >
       <img
         src="/Logo_capture_proche.webp"
-        alt="Logo"
+        alt="SA Courtage logo"
         class="w-24 h-14 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
       />
     </NuxtLink>
@@ -48,12 +38,13 @@ onBeforeUnmount(() => {
     <ul
       
       :class="{ 'hidden': !isMenuOpen, 'block': isMenuOpen, }"
-      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-[#f1f5f9f6] md:bg-transparent w-full md:w-auto shadow-lg md:shadow-none z-50"
+      class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-slate-100 md:bg-transparent w-full md:w-auto shadow-lg md:shadow-none z-50"
     >
     <li
         class="relative lg:pr-10 group"
       >
         <button
+          type="button"
           @click="isDropdownOpen = !isDropdownOpen"
           :class="{
             'font-bold': [
@@ -63,7 +54,7 @@ onBeforeUnmount(() => {
               '/credit-immobilier/rachat-credit',
             ].includes(route.path),
           }"
-          class="flex items-center gap-2 w-full text-gray-800 px-4 p-2 md:py-4 focus:outline-none hover:underline hover:underline-offset-2"
+          class="flex items-center gap-2 w-full text-gray-800 px-4 p-2 focus:outline-none hover:underline hover:underline-offset-2 focus-visible:outline-2 focus-visible:outline-black"
         >
           Crédit immobilier
           <Icon name="iconamoon:arrow-down-2-duotone" class="ml-1" />
@@ -74,7 +65,6 @@ onBeforeUnmount(() => {
           @update:is-dropdown-open="isDropdownOpen = $event" 
           :class="[
           isDropdownOpen ? 'block' : 'hidden',
-          'md:hidden md:group-hover:block',
           'absolute top-full mt-[-10px]'
           ]"
         />
