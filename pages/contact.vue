@@ -7,12 +7,12 @@
         image-alt="image de mains sur un clavier"
       />
     </section>
-    <section class="lg:h-sectionlg xl:h-sectionxl flex flex-col justify-center items-center">
-      <div class="w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto py-20 px-5">
+    <section class="w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto py-20 px-5">
+      <div class="flex flex-col justify-center items-center">
         <h2 class="text-center pb-10 text-2xl md:text-3xl font-semibold px-5">
           Vous avez un projet immobilier, des questions ?
         </h2>
-        <p class="text-lg md:text-xl pb-5">
+        <p class="pb-5">
           N’attendez plus, prenez un
           <span class="underline font-medium"
             ><a href="#agenda">rendez-vous téléphonique</a></span
@@ -23,7 +23,7 @@
           >
           ci-dessous. Faisons de vos envies des réalités !
         </p>
-        <ul class="flex flex-col gap-5 pt-5 md:flex-row md:justify-around">
+        <ul class="flex flex-col w-full gap-5 pt-5 md:flex-row md:justify-around">
           <ContactItem
             href="tel:+33612345678"
             icon="mdi:phone"

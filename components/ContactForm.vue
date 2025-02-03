@@ -35,18 +35,15 @@ async function sendMail(formData: Message) {
     <div class="border-b-2 border-slate-300 mb-3 pb-3">
       <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold px-5">Contactez-moi !</h2>
     </div>
-    <div class="w-full h-[465px] flex flex-col justify-center items-center md:flex-row md:justify-between gap-10">
-      <div class="hidden md:block md:w-1/2 h-full">
-        <img src="/images/SA_contact.webp" alt="" class="h-full w-full object-cover rounded-2xl">
-      </div>
-      <div class="w-1/2">
+    <div class="flex flex-col md:flex-row gap-10 w-full justify-between">
+      <div class="w-full md:w-[40%] xl:w-[50%]">
         <FormKit
-          id="contact-form"
-          data-aos="fade-right"
-          type="form"
-          submit-label="Envoyer"
-          class="space-y-4"
-          @submit="sendMail"
+        id="contact-form"
+        data-aos="fade-right"
+        type="form"
+        submit-label="Envoyer"
+        class="space-y-4"
+        @submit="sendMail"
         >
           <FormKit v-model="fullName" type="group">
             <div class="">
@@ -89,6 +86,9 @@ async function sendMail(formData: Message) {
             :validation-messages="validationMessages"
           />
         </FormKit>
+      </div>
+      <div class="hidden md:block md:w-[60%] xl:w-[50%] h-full">
+        <img src="/images/SA_contact.webp" alt="" class="h-full w-full object-cover rounded-2xl">
       </div>
     </div>
     <div v-if="submitted">
