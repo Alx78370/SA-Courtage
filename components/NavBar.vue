@@ -54,6 +54,7 @@ onBeforeUnmount(() => {
         class="relative lg:pr-10 group"
       >
         <button
+          @click="isDropdownOpen = !isDropdownOpen"
           :class="{
             'font-bold': [
               '/credit-immobilier/pret-residence-principale-ou-secondaire',
@@ -68,9 +69,17 @@ onBeforeUnmount(() => {
           <Icon name="iconamoon:arrow-down-2-duotone" class="ml-1" />
         </button>
 
-        <DropdownMenu @close-dropdown="closeMenuAndDropdown" @update:is-dropdown-open="isDropdownOpen = $event" class="hidden top-full mt-[-10px] group-hover:block" />
+        <DropdownMenu 
+          @close-dropdown="closeMenuAndDropdown" 
+          @update:is-dropdown-open="isDropdownOpen = $event" 
+          :class="[
+          isDropdownOpen ? 'block' : 'hidden',
+          'md:hidden md:group-hover:block',
+          'absolute top-full mt-[-10px]'
+          ]"
+        />
       </li>
-      <li v-if="isDropdownOpen" class="h-[165px]" />
+      <li v-if="isDropdownOpen" class="h-[165px] md:hidden" />
       <li class="lg:pr-10">
         <NuxtLink
           to="/assurance-emprunteur"
