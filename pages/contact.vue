@@ -25,7 +25,7 @@
         </p>
         <ul class="flex flex-col w-full gap-5 pt-5 md:flex-row md:justify-around">
           <ContactItem
-            href="tel:+33612345678"
+            href="tel:+33640960203"
             icon="mdi:phone"
             text="06 40 96 02 03"
           />
