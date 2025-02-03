@@ -7,7 +7,7 @@
         image-alt="image de couple recevant la clé de leur maison"
       />
     </section>
-    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+    <section class="px-2 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
       <article>
         <h2 class="text-2xl text-center font-semibold pb-10 md:text-3xl">
           Concrétisez votre projet immobilier avec sérénité

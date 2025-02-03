@@ -7,7 +7,7 @@
         image-alt="image d'appartement"
       />
     </section>
-    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+    <section class="px-2 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
       <div>
         <h2 class="text-xl font-semibold text-center pb-10">
           Boostez votre patrimoine avec un investissement locatif clé en main !

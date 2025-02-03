@@ -7,9 +7,9 @@
         image-alt="image de Sylvie Allard"
       />
     </section>
-    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+    <section class="px-2 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
       <article>
-          <h2 class="text-center text-2xl md:text-3xl font-semibold pb-20">
+          <h2 class="text-center text-2xl md:text-3xl font-semibold pb-10">
               A vos côtés pour concrétiser vos projets immobiliers
           </h2>
         <div class="flex flex-col md:flex-row gap-10">
@@ -44,7 +44,7 @@
               Votre satisfaction sera ma réussite.
             </p>
           </div>
-          <div class="flex flex-col mr-5 mt-2 mb-2 float-left md:w-[50%]">
+          <div class="flex flex-col mr-5 mt-2 mb-2 float-left w-full md:w-[50%]">
             <img
               src="/images/SA_trophee.webp"
               alt="image de Sylvie Allard avec ses trophées"

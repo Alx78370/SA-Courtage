@@ -7,9 +7,9 @@
         image-alt="image de mains sur un clavier"
       />
     </section>
-    <section class="w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto py-20 px-5">
+    <section class="w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto py-20 px-2">
       <div class="flex flex-col justify-center items-center">
-        <h2 class="text-center pb-10 text-2xl md:text-3xl font-semibold px-5">
+        <h2 class="text-center pb-10 text-2xl md:text-3xl font-semibold">
           Vous avez un projet immobilier, des questions ?
         </h2>
         <p class="pb-5">
@@ -36,9 +36,12 @@
           />
         </ul>
       </div>
+      <div class="w-full md:hidden pt-10 md:pt-0">
+        <img src="/images/SA_contact.webp" alt="images de Sylvie Allard" class="h-full w-full object-cover rounded-2xl">
+      </div>
     </section>
     <section id="form" class=" bg-white">
-      <div class="w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto px-5 py-20">
+      <div class="w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto px-2 py-20">
         <ContactForm />
       </div>
     </section>

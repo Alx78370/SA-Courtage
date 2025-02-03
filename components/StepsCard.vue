@@ -28,7 +28,7 @@ defineProps({
       class="absolute inset-0 bg-opacity-60 bg-slate-900 px-5 py-10 flex items-center justify-center"
     >
       <div class="text-white">
-        <h3 class="text-xl font-semibold pb-5">
+        <h3 class="text-lg font-semibold pb-5">
           Les étapes de mon accompagnement :
         </h3>
         <hr class="pb-5" />

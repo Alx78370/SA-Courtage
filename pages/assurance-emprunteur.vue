@@ -7,7 +7,7 @@
         image-alt="image de couple content"
       />
     </section>
-    <section class="px-5 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+    <section class="px-2 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
       <div>
         <h2 class="text-2xl text-center font-semibold pb-10 md:text-3xl">
           Nouvelle assurance ou changement d'assurance de prêt ?

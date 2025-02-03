@@ -33,7 +33,7 @@ async function sendMail(formData: Message) {
 <template>
   <div class="bg-white">
     <div class="border-b-2 border-slate-300 mb-3 pb-3">
-      <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold px-5">Contactez-moi !</h2>
+      <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold px-2">Contactez-moi !</h2>
     </div>
     <div class="flex flex-col md:flex-row gap-10 w-full justify-between">
       <div class="w-full md:w-[40%] xl:w-[50%]">
@@ -88,7 +88,7 @@ async function sendMail(formData: Message) {
         </FormKit>
       </div>
       <div class="hidden md:block md:w-[60%] xl:w-[50%] h-full">
-        <img src="/images/SA_contact.webp" alt="" class="h-full w-full object-cover rounded-2xl">
+        <img src="/images/SA_contact.webp" alt="images de Sylvie Allard" class="h-full w-full object-cover rounded-2xl">
       </div>
     </div>
     <div v-if="submitted">
