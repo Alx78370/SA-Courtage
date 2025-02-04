@@ -8,6 +8,17 @@ const options = {
     url: 'https://calendly.com/s-a-courtage/30min', 
     text: 'Prendre rendez-vous', 
 }
+const navRef = ref<HTMLElement | null>(null);
+
+function handleClickOutside(event: MouseEvent) {
+  if (
+    isMenuOpen.value && 
+    navRef.value && 
+    !navRef.value.contains(event.target as Node)
+  ) {
+    closeMenuAndDropdown();
+  }
+}
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
@@ -16,10 +27,19 @@ function toggleMenu() {
 function closeMenuAndDropdown() {
 	isMenuOpen.value = false;
 }
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleClickOutside);
+});
 </script>
 
 <template>
   <nav
+    ref="navRef"
     class="fixed z-50 h-20 bg-slate-100 w-full flex items-center justify-between p-4 lg:py-4"
   >
       <a
