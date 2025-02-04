@@ -62,8 +62,5 @@
         ]" 
       />
     </section>
-    <section class="py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
-      <AgendaHome title="N'hésitez pas à me contacter pour une étude personnalisée de votre investissement locatif" />
-    </section>
   </div>
 </template>

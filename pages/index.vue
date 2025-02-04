@@ -6,12 +6,12 @@
     <section class="py-20 ">
       <CarouselBank class="bg-white py-10 md:py-20" />
     </section>
-    <section class="px-2 py-20 w-screen md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+    <section class="px-2 py-20 w-full md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
       <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold">
         Retrouvez mes différentes prestations
       </h2>
       <div
-        class="flex flex-col w-full lg:grid lg:grid-cols-2 lg:gap-5 xl:grid-cols-3"
+        class="flex flex-col gap-5 w-full lg:grid lg:grid-cols-2 lg:gap-5 xl:grid-cols-3"
       >
         <ServiceCard
           title="Prêt pour résidence principale ou secondaire"
@@ -45,10 +45,6 @@
           details="Des offres d’assurance emprunteur pour une couverture adaptée à votre profil."
         />
       </div>
-    </section>
-
-    <section class="py-20"> 
-      <AgendaHome />
     </section>
   </div>
 </template>

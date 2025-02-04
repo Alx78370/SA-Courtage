@@ -69,7 +69,7 @@ const responsiveOptions = ref([
       :num-visible="4"
       :num-scroll="1"
       :responsive-options="responsiveOptions"
-      :autoplay-interval="3000"
+      :autoplay-interval="2000"
       :show-item-navigators="false"
       :show-navigators="false"
     >

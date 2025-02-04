@@ -45,8 +45,5 @@
     <section>
       <StepsCard />
     </section>
-    <section class="py-10">
-      <AgendaHome />
-    </section>
   </div>
 </template>

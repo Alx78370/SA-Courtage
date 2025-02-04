@@ -3,6 +3,12 @@ const route = useRoute();
 const isMenuOpen = ref(false);
 const isDropdownOpen = ref(false);
 
+const rootElement = ref()
+const options = {
+    url: 'https://calendly.com/s-a-courtage/30min', 
+    text: 'Prendre rendez-vous', 
+}
+
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
 }
@@ -14,7 +20,7 @@ function closeMenuAndDropdown() {
 
 <template>
   <nav
-    class="fixed z-50 h-20 bg-slate-100 w-screen flex items-center justify-between p-4 lg:py-4 lg:px-10 text-lg lg:text-xl"
+    class="fixed z-50 h-20 bg-slate-100 w-full flex items-center justify-between p-4 lg:py-4"
   >
       <a
         href="#mainContent"
@@ -32,11 +38,7 @@ function closeMenuAndDropdown() {
         class="w-24 h-14 object-cover hover:scale-105 transition-all duration-300 ease-in-out"
       />
     </NuxtLink>
-    <div>
-      <BurgerMenu @click="toggleMenu"  />
-    </div>
     <ul
-      
       :class="{ 'hidden': !isMenuOpen, 'block': isMenuOpen, }"
       class="md:flex md:items-center flex-col md:flex-row absolute md:static top-20 left-0 md:top-0 md:left-0 bg-slate-100 md:bg-transparent w-full md:w-auto shadow-lg md:shadow-none z-50"
     >
@@ -101,5 +103,14 @@ function closeMenuAndDropdown() {
         </NuxtLink>
       </li>
     </ul>
+    <div type="button" ref="rootElement" class="hidden sm:block bg-blue-600 font-semibold p-3 rounded-2xl w-fit transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700 text-white">
+      <CalendlyPopupButton
+        v-bind="options"
+        :root-element="rootElement"
+      />
+    </div>
+    <div class="md:hidden">
+      <BurgerMenu @click="toggleMenu" />
+    </div>
   </nav>
 </template>

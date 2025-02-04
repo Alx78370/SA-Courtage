@@ -85,10 +85,6 @@
           </div>
         </div>
       </div>
-      
-    </section>
-    <section class="py-20">
-      <AgendaHome />
     </section>
   </div>
 </template>

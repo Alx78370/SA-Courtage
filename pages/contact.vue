@@ -45,8 +45,5 @@
         <ContactForm />
       </div>
     </section>
-    <section id="agenda" class="py-20">
-      <AgendaHome />
-    </section>
   </div>
 </template>

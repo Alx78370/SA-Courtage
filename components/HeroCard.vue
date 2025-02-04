@@ -1,12 +1,12 @@
 <template>
-  <div class="relative h-section w-screen">
+  <div class="relative h-section w-full">
     <img
       src="/images/SA_hero_cover.webp"
       alt="Image hero"
       class="absolute top-0 left-0 h-section w-full object-cover"
     />
     <div
-      class="absolute py-2 px-2 md:py-5 md:px-5 md:pr-10 w-screen text-white items-end flex flex-col"
+      class="absolute top-2 inset-x-2 md:top-5 md:right-5 text-white sm:items-end sm:flex sm:flex-col"
     >
       <div class="flex flex-col items-center text-gray-800 bg-[#f1f5f9bd] rounded-2xl p-2 md:p-10">
         <h1
@@ -35,13 +35,13 @@
           <div class="flex justify-center gap-5">
             <NuxtLink
               to="/contact"
-              class="flex justify-center items-center bg-blue-600 font-semibold p-3 rounded-2xl w-fit md:text-xl transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700 text-white"
+              class="flex justify-center items-center bg-blue-600 font-semibold p-3 rounded-2xl w-fit transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700 text-white"
             >
               Contactez-moi
             </NuxtLink>
             <NuxtLink
               to="/a-propos"
-              class="flex justify-center items-center bg-slate-100 text-gray-800 border-2 font-semibold p-3 rounded-2xl w-fit md:text-xl transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-slate-200"
+              class="flex justify-center items-center bg-slate-100 text-gray-800 border-2 font-semibold p-3 rounded-2xl w-fit transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-slate-200"
             >
               En savoir plus
             </NuxtLink>
