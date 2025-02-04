@@ -103,12 +103,13 @@ function closeMenuAndDropdown() {
         </NuxtLink>
       </li>
     </ul>
-    <div type="button" ref="rootElement" class="hidden sm:block bg-blue-600 font-semibold p-3 rounded-2xl w-fit transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700 text-white">
+    <div class="hidden sm:block bg-blue-600 font-semibold p-3 rounded-2xl w-fit transition-all delay-75 duration-300 ease-in-out hover:scale-110 hover:bg-blue-700 text-white">
       <CalendlyPopupButton
         v-bind="options"
         :root-element="rootElement"
       />
     </div>
+    <div class="absolute top-0" ref="rootElement" />
     <div class="md:hidden">
       <BurgerMenu @click="toggleMenu" />
     </div>
