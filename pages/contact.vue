@@ -13,11 +13,7 @@
           Vous avez un projet immobilier, des questions ?
         </h2>
         <p class="pb-5">
-          N’attendez plus, prenez un
-          <span class="underline font-medium"
-            ><a href="#agenda">rendez-vous téléphonique</a></span
-          >
-          ou complétez le
+          N’attendez plus, prenez un rendez-vous téléphonique ou complétez le
           <span class="underline font-medium"
             ><a href="#form">formulaire de contact</a></span
           >
