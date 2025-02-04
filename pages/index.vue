@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="relative h-section mb-20">
+    <section class="relative h-section mb-10">
       <HeroCard />
     </section>
-    <section class="px-2 py-20 w-full md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
-      <h2 class="text-center pb-5 text-2xl md:text-3xl font-semibold">
+    <section class="px-2 py-10 w-full md:w-[90%] lg:w-[80%] xl:w-2/3 md:mx-auto">
+      <h2 class="text-center pb-20 text-2xl md:text-3xl font-semibold">
         Retrouvez mes différentes prestations
       </h2>
       <div
@@ -43,8 +43,8 @@
         />
       </div>
     </section>
-    <section class="py-20 ">
-      <CarouselBank class="bg-white py-10 md:py-20" />
+    <section class="py-10">
+      <CarouselBank class="bg-white py-20" />
     </section>
   </div>
 </template>
