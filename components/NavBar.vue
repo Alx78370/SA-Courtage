@@ -71,7 +71,7 @@ function closeMenuAndDropdown() {
           ]"
         />
       </li>
-      <li v-if="isDropdownOpen" class="h-[170px] md:hidden" />
+      <li v-if="isDropdownOpen" class="h-[165px] md:hidden" />
       <li class="lg:pr-10">
         <NuxtLink
           to="/assurance-emprunteur"
