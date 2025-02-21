@@ -6,10 +6,10 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Sylvie Allard - Courtier immobilier',
+      title: 'SA Courtage - courtier immobilier ',
       htmlAttrs: { lang: 'fr' },
       meta: [
-        { hid: 'description', name: 'description', content: 'Sylvie Allard, courtier immobilier en région parisienne, vous accompagne pour vos crédits immobiliers (résidence principale ou secondaire, investissement locatif, rachat de crédit, rachat de soulte) et votre assurance emprunteur. Simplifiez vos démarches et obtenez les meilleures offres adaptées à vos besoins.' },
+        { hid: 'description', name: 'description', content: 'SA Courtage, courtier immobilier en région parisienne, vous accompagne pour vos crédits immobiliers (résidence principale ou secondaire, investissement locatif, rachat de crédit, rachat de soulte) et votre assurance emprunteur. Simplifiez vos démarches et obtenez les meilleures offres adaptées à vos besoins.' },
         { hid: 'author', name: 'author', content: 'Alexis Vachet' },
       ],
       link: [

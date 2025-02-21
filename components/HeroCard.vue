@@ -2,7 +2,7 @@
   <div class="relative h-section w-full">
     <img
       src="/images/SA_hero_cover.webp"
-      alt="Image hero"
+      alt="SA Courtage - Courtier en prêt immobilier et assurance"
       class="absolute top-0 left-0 h-section w-full object-cover"
     />
     <div
@@ -12,7 +12,7 @@
         <h1
           class="flex flex-col text-2xl font-semibold md:items-center lg:text-6xl"
         >
-          Sylvie Allard
+          S.A. Courtage
         </h1>
         <h2 class="text-lg text-center lg:text-xl pt-1 font-semibold pb-3 border-b-2 border-gray-400">
           Courtier en prêt immobilier et assurance
